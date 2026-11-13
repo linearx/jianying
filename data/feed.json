@@ -48,7 +48,7 @@
         "讨论",
         "AI写作"
       ],
-      "cover": "",
+      "cover": "./data/covers/thumbs/671be98cea32.jpg",
       "lang": "en",
       "duration": null,
       "keyPoints": [
@@ -294,7 +294,7 @@
         "讨论",
         "AI编程"
       ],
-      "cover": "",
+      "cover": "./data/covers/thumbs/8a925b5f28ce.jpg",
       "lang": "en",
       "duration": null,
       "keyPoints": [
@@ -661,7 +661,7 @@
         "讨论",
         "AI内容"
       ],
-      "cover": "",
+      "cover": "./data/covers/thumbs/5eaba134a93f.jpg",
       "lang": "en",
       "duration": null,
       "keyPoints": [
@@ -1105,7 +1105,7 @@
         "讨论",
         "AI编程"
       ],
-      "cover": "",
+      "cover": "./data/covers/thumbs/2eeddbd49d7f.jpg",
       "lang": "en",
       "duration": null,
       "keyPoints": [
