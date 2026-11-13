@@ -3703,6 +3703,7 @@ window.FEED_DATA = {
     }
   }
   let ghMode = false;
+  let refreshRequested = false;
   let pending = 0;
   let collected = new Set();
   let hidden = new Set();
@@ -3927,6 +3928,7 @@ window.FEED_DATA = {
       `今日 ${c.all} 条 · 待办 ${c.todo} · 已阅 ${c.read} · 已收 ${c.saved}`
       + (c.hidden ? ` · 已隐藏 ${c.hidden}` : '')
       + (pending ? ` · 待处理 ${pending}` : '')
+      + (refreshRequested ? ' · 更新请求待处理' : '')
       + (ghMode ? ' · GitHub' : '');
 
     document.querySelectorAll('#seg button').forEach((b) => {
@@ -4130,7 +4132,37 @@ window.FEED_DATA = {
     };
   }
 
+  async function submitRefreshTask() {
+    if (!GH.token) {
+      showToast('先在 ⚙ 里填 token，才能提交抓取请求');
+      return;
+    }
+    const body = { requestedAt: new Date().toISOString(), from: 'web', status: 'pending' };
+    const content = b64(JSON.stringify(body, null, 2));
+    const base = `https://api.github.com/repos/${GH.repo}/contents/tasks/request.json`;
+    try {
+      let sha = null;
+      const g = await fetch(`${base}?ref=${encodeURIComponent(GH.branch)}`, { headers: ghHeaders() });
+      if (g.ok) sha = (await g.json()).sha;
+      const p = await fetch(base, {
+        method: 'PUT',
+        headers: ghHeaders(),
+        body: JSON.stringify({
+          message: `refresh request ${body.requestedAt}`,
+          content,
+          branch: GH.branch,
+          ...(sha ? { sha } : {}),
+        }),
+      });
+      if (!p.ok) throw new Error(`提交失败 ${p.status}`);
+      showToast('已提交抓取请求，等 agent 处理');
+    } catch (e) {
+      showToast('提交失败：' + e.message);
+    }
+  }
+
   async function refreshBatch() {
+    if (ghMode) return submitRefreshTask();
     if (location.protocol === 'file:') {
       showToast('本地文件模式不能抓取：用服务模式打开，或直接在对话里让我跑一批');
       return;
@@ -4407,6 +4439,17 @@ window.FEED_DATA = {
     if (!apiOk && !ghMode && !GH.repo && !onPages) {
       const o = document.querySelector('#offline');
       if (o) o.hidden = false;
+    }
+
+    if (ghMode) {
+      const b = document.querySelector('#refreshBtn');
+      if (b) b.textContent = '请求更新';
+      if (GH.token) {
+        try {
+          const r = await fetch(`https://api.github.com/repos/${GH.repo}/contents/tasks/request.json?ref=${GH.branch}`, { headers: ghHeaders() });
+          refreshRequested = r.ok;
+        } catch (e) { /* 忽略 */ }
+      }
     }
 
     if (DATA.generatedAt) $('#genAt').textContent = new Date(DATA.generatedAt).toLocaleString('zh-CN');
