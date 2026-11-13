@@ -1,6 +1,6 @@
 window.FEED_DATA = {
   "generatedAt": "2026-11-13T10:25:26.029Z",
-  "count": 72,
+  "count": 82,
   "batches": [
     {
       "id": 4,
@@ -28,6 +28,417 @@ window.FEED_DATA = {
     }
   ],
   "items": [
+    {
+      "key": "https://news.ycombinator.com/item?id=50481227",
+      "url": "https://news.ycombinator.com/item?id=50481227",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Ask HN: Do you see a human written book more valuable than an AI written one?",
+      "titleZh": "HN 讨论：手写的书，还比 AI 写的更值钱吗",
+      "author": "znano",
+      "publishedAt": "2026-11-13T10:20:59.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "I have been working on a book for the past year and half and Im finally done with it. But now that it is time to publish it i think what I have written and reviewed by hand would not be as good as an AI written one. I wonder if anyone values human work more than AI even if it's not as good.…",
+      "excerptZh": "",
+      "reason": "作者写了两年半，临出版却担心不如 AI 版——「人写的」还值不值钱这个问题被摆到台面上。",
+      "tags": [
+        "讨论",
+        "AI写作"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "作者用一年半写完一本书，临出版时担心「手写+人工校对」的版本不如 AI 写的",
+        "他发帖问：就算 AI 版本更好，人们还会不会更看重人类写的东西",
+        "唯一回复认为小说这类创作里人类劳动更值得看重；作者补充这本书其实是入门级技术书"
+      ],
+      "uses": [
+        "内容选题：AI 时代「人写的」还值不值钱",
+        "自省：自己做的内容被 AI 追平时的定位"
+      ],
+      "gap": "",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 0
+    },
+    {
+      "key": "https://status.claude.com/incidents/nn11wk485zfn",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "titleZh": "Claude.ai 大面积故障：登录认证出问题，官方调查中",
+      "author": "__vivek",
+      "publishedAt": "2026-11-13T10:18:13.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 38
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "头部模型服务当天最严重的故障，官方状态页把影响范围列得最清楚。",
+      "tags": [
+        "行业",
+        "平台"
+      ],
+      "cover": "./data/covers/thumbs/44da454e7900.jpg",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "官方 2026-11-13 09:58 UTC 开始调查，等级 major，claude.ai 完全宕机",
+        "同一时间 Claude Console 与 Claude Code 部分不可用，Claude Cowork 性能下降；Claude API 正常",
+        "官方说法是用户在 Claude.ai 和 Claude Code 上的登录认证出问题"
+      ],
+      "uses": [
+        "运维参考：关键工作流准备备用模型和降级方案",
+        "内容选题：AI 服务可用性与单点依赖"
+      ],
+      "gap": "",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 1
+    },
+    {
+      "key": "https://muzegen.ai",
+      "url": "https://muzegen.ai",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Show HN: MuzeGen AI – Generate AI music with stem separation and MIDI export",
+      "titleZh": "MuzeGen：AI 写歌，还能导出分轨和 MIDI 进 DAW",
+      "author": "sakkyoku_ai",
+      "publishedAt": "2026-11-13T10:07:15.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "不只生成整首歌，还能导出 stems 和 MIDI，等于把 AI 生成接进现有制作流程。",
+      "tags": [
+        "AI应用",
+        "工具"
+      ],
+      "cover": "./data/covers/thumbs/09c7689552f1.jpg",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "输入文本或自己写的歌词，生成带人声的完整歌曲；AI 也能写歌词",
+        "可导入音频做风格改编并保留主旋律，导出分轨（stems）和 MIDI 给 Logic、Ableton、FL Studio",
+        "页面称付费套餐生成的音乐可商用，封面也由 AI 生成"
+      ],
+      "uses": [
+        "自用：给短视频配乐或做歌曲 demo，再进 DAW 精修",
+        "观察：AI 音乐工具开始拼「和现有工作流兼容」"
+      ],
+      "gap": "",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 2
+    },
+    {
+      "key": "https://challenge.timenet.ai",
+      "url": "https://challenge.timenet.ai",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "TimeNet challenge: An online hackathon for time-series AI",
+      "titleZh": "TimeNet 挑战赛：用时序数据训一个「时间模型」",
+      "author": "masquare",
+      "publishedAt": "2026-11-13T09:54:02.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 2
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "有明确赛程和奖励的时序 AI 黑客松，适合拿来练手或组队参赛。",
+      "tags": [
+        "活动",
+        "学习"
+      ],
+      "cover": "./data/covers/thumbs/d85b4e920e8e.jpg",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "在线黑客松，第 1 轮 2026-11-22 截止，2–4 人组队",
+        "流程：任选时序问题，把数据按 TimeNet 格式接入，再训练/微调时序模型（如 OpenTSLM）",
+        "奖励：Nebius 100/500 美元代金券；获胜团队可拿 AWS、Google Cloud 各至少 2.5 万美元额度"
+      ],
+      "uses": [
+        "练手：完整走一遍时序模型的数据接入与微调",
+        "选题：时序 AI 在工业、能源、医疗的落地"
+      ],
+      "gap": "",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 3
+    },
+    {
+      "key": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
+      "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "EU leaders seek to tackle challenges at first ever AI summit",
+      "titleZh": "欧盟首届 AI 峰会在都柏林开场：追赶中美、谈监管",
+      "author": "gvieri",
+      "publishedAt": "2026-11-13T09:45:14.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "欧盟第一次把 AI 单独摆上领导人议程，信号意义大于会议本身。",
+      "tags": [
+        "行业",
+        "政策"
+      ],
+      "cover": "./data/covers/thumbs/96618608dcdc.jpg",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "欧盟领导人 2026-11-13 在都柏林开史上首次 AI 峰会，讨论如何追赶美国、中国并解决融资问题",
+        "会议背景是近期一连串「失控 AI agent」事件，以及英伟达 CEO 黄仁勋本周辞职",
+        "领导人还要评估如何精简监管流程、给 AI 设护栏"
+      ],
+      "uses": [
+        "跟踪：欧盟 AI 监管与产业政策的下一步",
+        "内容选题：欧洲在 AI 竞赛里的位置"
+      ],
+      "gap": "reuters.com 正文抓取失败（站点反爬/网络不通），关键信息依据转载同一路透稿的全文。",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 4
+    },
+    {
+      "key": "https://github.com/juanyque/agent-brain",
+      "url": "https://github.com/juanyque/agent-brain",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "How HN: Agent-brain – Notes-agnostic second-brain operating model for AI agents",
+      "titleZh": "agent-brain：让 agent 的配置和记忆跨 runtime、跨机器同步",
+      "author": "juanyque",
+      "publishedAt": "2026-11-13T09:43:45.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "把 CLAUDE.md/AGENTS.md、记忆和配置放进 git，再软链到各 agent runtime，配置跟着人走。",
+      "tags": [
+        "工具",
+        "agent"
+      ],
+      "cover": "./data/covers/thumbs/fd7ee75bfa93.jpg",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "给 AI 编程 agent 一套第二大脑结构：日志、WIP、记忆、任务，不绑定 Obsidian 等具体笔记软件",
+        "CLAUDE.md / AGENTS.md、记忆和运行时配置放进 git 仓库，再软链到 ~/.claude、~/.codex 等各 runtime",
+        "用 brain skill 管理日常笔记、会话和 consolidation；另有可选的 boyscout 技能收集改进点"
+      ],
+      "uses": [
+        "自用：在多台机器、多个 agent runtime 间同步配置与记忆",
+        "内容选题：agent 的「记忆」怎么工程化"
+      ],
+      "gap": "",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 5
+    },
+    {
+      "key": "https://news.ycombinator.com/item?id=50480754",
+      "url": "https://news.ycombinator.com/item?id=50480754",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Ask HN: How is your team handling the flood of PRs?",
+      "titleZh": "HN 讨论：AI 时代，你们团队怎么处理汹涌的 PR？",
+      "author": "hubraumhugo",
+      "publishedAt": "2026-11-13T09:36:27.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 2
+      },
+      "excerpt": "Curious to hear how everyone is dealing with the flood of PRs in their teams now that we all arrived in the AI era and dust settled a bit. From review process (humans + agents, when/which) to e2e testing (like having scenarios as markdown that agents test?), where did you land and what were…",
+      "excerptZh": "",
+      "reason": "AI 让 PR 数量暴涨后，评审和 e2e 测试的人机分工成了团队级新问题。",
+      "tags": [
+        "讨论",
+        "AI编程"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "提问者想知道：进入 AI 时代后，各团队怎么处理暴增的 PR",
+        "他关心两件事：评审怎么在人/agent 之间分工，e2e 测试怎么用 markdown 场景让 agent 跑",
+        "发帖时只有一条调侃式回复，没有实质经验分享"
+      ],
+      "uses": [
+        "自省：给团队 PR 评审定人机分工规则",
+        "内容选题：agent 写码之后的评审瓶颈"
+      ],
+      "gap": "帖子刚发布，回复很少，关键信息主要来自提问本身。",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 6
+    },
+    {
+      "key": "https://www.f-secure.com/en/partners/illuminate-research/ai-harms-taxonomy",
+      "url": "https://www.f-secure.com/en/partners/illuminate-research/ai-harms-taxonomy",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Taxonomy of 26 Ways AI Can Make Your Life Worse",
+      "titleZh": "F-Secure 的 AI 危害图谱：26 种方式、19 层、24 种防御",
+      "author": "mrkn1",
+      "publishedAt": "2026-11-13T09:29:29.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "不只列风险，还把每种危害拆到「能在哪一层修」，适合拿来对照产品设计。",
+      "tags": [
+        "安全",
+        "风险"
+      ],
+      "cover": "./data/covers/thumbs/0ef568c05db7.jpg",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "收录 26 种 AI 危害、19 个中间层、24 种防御，按「能在哪一层拦截」来组织",
+        "危害分 5 类关系：chatbot→消费者、agent→消费者、攻击者→消费者、攻击者→agent、攻击者→chatbot",
+        "收录标准是真人受损且 AI 参与；作者强调很多危害只能由模型厂商和产品方来修"
+      ],
+      "uses": [
+        "产品自查：对照 26 类危害审视自己的 AI 功能",
+        "内容选题：AI 安全责任怎么分层"
+      ],
+      "gap": "",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 7
+    },
+    {
+      "key": "https://coyotetracks.org/blog/right-amount-of-ai/",
+      "url": "https://coyotetracks.org/blog/right-amount-of-ai/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Is there a 'right amount' of AI?",
+      "titleZh": "到底该用多少 AI？一个怀疑者的自问",
+      "author": "milali",
+      "publishedAt": "2026-11-13T09:27:05.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 2
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "从「Big Walk 用了不到千分之一的 LLM 代码」的争议出发，谈用 AI 的边界与代价。",
+      "tags": [
+        "观点",
+        "AI编程"
+      ],
+      "cover": "./data/covers/thumbs/844a7a446148.jpg",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "作者是 AI 怀疑者，但承认自己用的软件里已有 AI 生成代码，完全回避做不到",
+        "IGF 评委拒绝给任何用生成式 AI 的游戏投票；Big Walk 承认用了不到千分之一的 LLM 代码",
+        "他认同的担忧：把写码交给 agent 会「去技能化」，而且少用 AI 才更容易审代码"
+      ],
+      "uses": [
+        "自省：给自己的 AI 使用划「有意为之」的边界",
+        "内容选题：AI 编程的伦理与技能流失"
+      ],
+      "gap": "",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 8
+    },
+    {
+      "key": "https://p99log.com/designing-tools-for-ai-agents/",
+      "url": "https://p99log.com/designing-tools-for-ai-agents/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Writing Effective Tools for Agents",
+      "titleZh": "怎么写给 agent 用的工具：OpenAI / Anthropic / Google 的实践总结",
+      "author": "collinstonui",
+      "publishedAt": "2026-11-13T09:25:08.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "把各家 agent 工具设计规范收在一处，超过 20 个工具后怎么扩展也给了方案。",
+      "tags": [
+        "工具",
+        "agent",
+        "工程"
+      ],
+      "cover": "./data/covers/thumbs/dc05bb284542.jpg",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "工具按工作流设计，别把每个 API endpoint 都包成工具；工具间重叠比数量更影响选择",
+        "名称、描述、schema 是模型逐字读的契约；工具返回内容和报错也属于 prompt",
+        "工具数超过约 20 个时用 toolsets / tool search / 代码执行；安全上防「lethal trifecta」，写操作加幂等键"
+      ],
+      "uses": [
+        "自用：审查自己 agent 的工具定义和错误信息",
+        "内容选题：agent / MCP 工具的工程化设计"
+      ],
+      "gap": "",
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 9
+    },
     {
       "key": "https://github.com/kobima6813/fossil-versions",
       "url": "https://github.com/kobima6813/fossil-versions",
@@ -67,7 +478,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 0
+      "id": 10
     },
     {
       "key": "https://sspai.com/post/118153",
@@ -105,7 +516,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 1
+      "id": 11
     },
     {
       "key": "https://concernedaistaff.org/",
@@ -146,7 +557,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 2
+      "id": 12
     },
     {
       "key": "https://rocketgit.com/user/catalinux/ai-drop",
@@ -187,7 +598,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 3
+      "id": 13
     },
     {
       "key": "https://cs329z.stanford.edu/",
@@ -228,7 +639,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 4
+      "id": 14
     },
     {
       "key": "https://news.ycombinator.com/item?id=50479788",
@@ -268,7 +679,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 5
+      "id": 15
     },
     {
       "key": "https://mlq.ai/news/tsmc-says-employee-personal-data-was-posted-online-from-a-cloud-providers-systems/",
@@ -308,7 +719,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 6
+      "id": 16
     },
     {
       "key": "https://twitter.com/willdepue/status/2120992457630326841",
@@ -348,7 +759,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 7
+      "id": 17
     },
     {
       "key": "https://www.bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures",
@@ -388,7 +799,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 8
+      "id": 18
     },
     {
       "key": "https://runitlocal.io/",
@@ -429,7 +840,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 9
+      "id": 19
     },
     {
       "key": "https://wonderchat.io/",
@@ -470,7 +881,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 10
+      "id": 20
     },
     {
       "key": "https://nachi065.github.io/AI-Security-Wiki/",
@@ -511,7 +922,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 11
+      "id": 21
     },
     {
       "key": "https://sspai.com/post/118512",
@@ -549,7 +960,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 12
+      "id": 22
     },
     {
       "key": "https://usediorama.com/rick-and-morty",
@@ -590,7 +1001,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 13
+      "id": 23
     },
     {
       "key": "https://github.com/sid732/loose-ends",
@@ -631,7 +1042,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 14
+      "id": 24
     },
     {
       "key": "https://github.com/getzipzi/zipzi-2d",
@@ -672,7 +1083,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 15
+      "id": 25
     },
     {
       "key": "https://news.ycombinator.com/item?id=50477517",
@@ -712,7 +1123,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 16
+      "id": 26
     },
     {
       "key": "https://www.notion.com/en-gb/security/advisories/security-incident-involving-a-third-party-ai-vendor",
@@ -753,7 +1164,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 17
+      "id": 27
     },
     {
       "key": "https://grow-bonsai.app/",
@@ -794,7 +1205,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 18
+      "id": 28
     },
     {
       "key": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
@@ -835,7 +1246,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 19
+      "id": 29
     },
     {
       "key": "https://latent.space/p/artcraft/",
@@ -877,7 +1288,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 20
+      "id": 30
     },
     {
       "key": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare",
@@ -919,7 +1330,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 21
+      "id": 31
     },
     {
       "key": "https://aircraftdefects.com/",
@@ -961,7 +1372,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 22
+      "id": 32
     },
     {
       "key": "https://thingspool.net/shards-of-sanity/page-5.html",
@@ -1002,7 +1413,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 23
+      "id": 33
     },
     {
       "key": "https://floxolab.com/ai-crawler-checker",
@@ -1044,7 +1455,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 24
+      "id": 34
     },
     {
       "key": "https://www.theatlantic.com/international/2026/11/nvidia-china-ai-regulation/689387/",
@@ -1085,7 +1496,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 25
+      "id": 35
     },
     {
       "key": "https://www.seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/",
@@ -1127,7 +1538,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 26
+      "id": 36
     },
     {
       "key": "https://www.theregister.com/ai-and-ml/2026/11/13/alibabas-qwen38-re-educated-with-a-more-western-worldview/5309555",
@@ -1168,7 +1579,7 @@ window.FEED_DATA = {
         "read": true,
         "hidden": false
       },
-      "id": 27
+      "id": 37
     },
     {
       "key": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
@@ -1210,7 +1621,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 28
+      "id": 38
     },
     {
       "key": "https://latent.space/p/jev-revolution/",
@@ -1249,7 +1660,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 29
+      "id": 39
     },
     {
       "key": "https://arxiv.org/abs/2611.15023v1",
@@ -1288,7 +1699,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 30
+      "id": 40
     },
     {
       "key": "https://github.com/janestreet/agent_skills",
@@ -1330,7 +1741,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 31
+      "id": 41
     },
     {
       "key": "https://www.bilibili.com/video/BV19JfKY8Eev",
@@ -1369,7 +1780,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 32
+      "id": 42
     },
     {
       "key": "https://sspai.com/post/118966",
@@ -1408,7 +1819,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 33
+      "id": 43
     },
     {
       "key": "https://schelling-atlas.com/",
@@ -1450,7 +1861,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 34
+      "id": 44
     },
     {
       "key": "https://latent.space/p/codex-work/",
@@ -1489,7 +1900,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 35
+      "id": 45
     },
     {
       "key": "https://arxiv.org/abs/2611.15006v1",
@@ -1528,7 +1939,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 36
+      "id": 46
     },
     {
       "key": "https://github.com/deepseek-ai/dsh-superagent-prototype",
@@ -1570,7 +1981,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 37
+      "id": 47
     },
     {
       "key": "https://www.bilibili.com/video/BV1W5fAYTEMk",
@@ -1609,7 +2020,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 38
+      "id": 48
     },
     {
       "key": "https://sspai.com/post/85735",
@@ -1649,7 +2060,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 39
+      "id": 49
     },
     {
       "key": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
@@ -1690,7 +2101,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 40
+      "id": 50
     },
     {
       "key": "https://latent.space/p/resend/",
@@ -1729,7 +2140,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 41
+      "id": 51
     },
     {
       "key": "https://arxiv.org/abs/2611.14997v1",
@@ -1768,7 +2179,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 42
+      "id": 52
     },
     {
       "key": "https://github.com/heydamir/unslop",
@@ -1810,7 +2221,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 43
+      "id": 53
     },
     {
       "key": "https://www.bilibili.com/video/BV1AXZ4YvEXY",
@@ -1848,7 +2259,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 44
+      "id": 54
     },
     {
       "key": "https://sspai.com/post/118935",
@@ -1887,7 +2298,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 45
+      "id": 55
     },
     {
       "key": "https://lars.yencken.org/have-ai-timelines-moved/",
@@ -1928,7 +2339,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 46
+      "id": 56
     },
     {
       "key": "https://latent.space/p/naiveai/",
@@ -1967,7 +2378,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 47
+      "id": 57
     },
     {
       "key": "https://arxiv.org/abs/2611.14980v1",
@@ -2006,7 +2417,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 48
+      "id": 58
     },
     {
       "key": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
@@ -2048,7 +2459,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 49
+      "id": 59
     },
     {
       "key": "https://www.bilibili.com/video/BV1cUoDYaEdb",
@@ -2087,7 +2498,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 50
+      "id": 60
     },
     {
       "key": "https://medium.com/young-coder/7-habits-of-highly-ineffective-ai-programmers-f40febb3b6e7",
@@ -2128,7 +2539,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 51
+      "id": 61
     },
     {
       "key": "https://simonwillison.net/2026/Nov/10/muse-ember/",
@@ -2167,7 +2578,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 52
+      "id": 62
     },
     {
       "key": "https://arxiv.org/abs/2611.14975v1",
@@ -2206,7 +2617,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 53
+      "id": 63
     },
     {
       "key": "https://github.com/yetone/magpie",
@@ -2248,7 +2659,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 54
+      "id": 64
     },
     {
       "key": "https://www.bilibili.com/video/BV1hsZCYZEMh",
@@ -2287,7 +2698,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 55
+      "id": 65
     },
     {
       "key": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
@@ -2328,7 +2739,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 56
+      "id": 66
     },
     {
       "key": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
@@ -2367,7 +2778,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 57
+      "id": 67
     },
     {
       "key": "https://arxiv.org/abs/2611.14960v1",
@@ -2406,7 +2817,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 58
+      "id": 68
     },
     {
       "key": "https://github.com/browser-use/jev-ultrafast",
@@ -2448,7 +2859,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 59
+      "id": 69
     },
     {
       "key": "https://www.bilibili.com/video/BV1igSdY7EFE",
@@ -2487,7 +2898,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 60
+      "id": 70
     },
     {
       "key": "https://birdyfoot.com/research/ai-tool-vulnerabilities",
@@ -2529,7 +2940,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 61
+      "id": 71
     },
     {
       "key": "https://simonwillison.net/2026/Nov/9/details-summary/",
@@ -2568,7 +2979,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 62
+      "id": 72
     },
     {
       "key": "https://arxiv.org/abs/2611.14935v1",
@@ -2607,7 +3018,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 63
+      "id": 73
     },
     {
       "key": "https://www.psypost.org/ai-written-peer-reviews-outscored-top-human-experts-in-blind-comparisons-harvard-working-paper-finds/",
@@ -2648,7 +3059,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 64
+      "id": 74
     },
     {
       "key": "https://latent.space/p/cs146s/",
@@ -2687,7 +3098,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 65
+      "id": 75
     },
     {
       "key": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
@@ -2728,7 +3139,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 66
+      "id": 76
     },
     {
       "key": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
@@ -2767,7 +3178,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 67
+      "id": 77
     },
     {
       "key": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
@@ -2809,7 +3220,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 68
+      "id": 78
     },
     {
       "key": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
@@ -2851,7 +3262,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 69
+      "id": 79
     },
     {
       "key": "https://github.com/hyperionaidev/smolmaxxing/",
@@ -2892,7 +3303,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 70
+      "id": 80
     },
     {
       "key": "https://ipo.anthropic.com/us/",
@@ -2934,7 +3345,7 @@ window.FEED_DATA = {
         "read": false,
         "hidden": false
       },
-      "id": 71
+      "id": 81
     }
   ]
 };
