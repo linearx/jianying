@@ -4982,6 +4982,18 @@ window.FEED_DATA = {
 
   const SERVER = location.protocol !== 'file:';
   const lsGet = (k) => { try { return localStorage.getItem(k) || ''; } catch (e) { return ''; } };
+
+  // 手机不方便输入 90 多位 token：支持打开 #t=<token> 一次性写入本机，然后从地址栏抹掉
+  {
+    const m = location.hash.match(/[#&]t=(github_pat_[A-Za-z0-9_]+)/);
+    if (m) {
+      try { localStorage.setItem('gh.token', m[1]); } catch (e) {}
+      try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+      location.reload();
+      return;
+    }
+  }
+
   const GH = {
     repo: lsGet('gh.repo'),
     branch: lsGet('gh.branch') || 'main',
