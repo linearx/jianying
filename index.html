@@ -3693,6 +3693,15 @@ window.FEED_DATA = {
     const m = location.pathname.match(/^\/([^/]+)/);
     if (m) GH.repo = `${location.hostname.split('.')[0]}/${m[1]}`;
   }
+
+  // 走 jsDelivr 时同样能推断：/gh/owner/repo@branch/index.html
+  {
+    const m = location.pathname.match(/^\/gh\/([^/]+)\/([^@/]+)@([^/]+)/);
+    if (m) {
+      GH.repo = `${m[1]}/${m[2]}`;
+      GH.branch = m[3];
+    }
+  }
   let ghMode = false;
   let pending = 0;
   let collected = new Set();
