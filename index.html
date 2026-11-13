@@ -83,6 +83,11 @@
   .subbar { background: #fff; border-bottom: 1px solid var(--line); }
   .subbar-inner { max-width: 1440px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; gap: 9px; color: var(--text3); font-size: 12.5px; }
   .live { width: 6px; height: 6px; border-radius: 50%; background: var(--pink); box-shadow: 0 0 0 3px rgba(251,114,153,.16); }
+  .sync-badge { font-size: 11.5px; padding: 1px 8px; border-radius: 10px; border: 1px solid var(--line); color: var(--text3); white-space: nowrap; }
+  .sync-badge.ok { color: #2f9e8f; border-color: #bfe6df; background: #f2fbf9; }
+  .sync-badge.warn { color: #8a5a00; border-color: #f0dcb8; background: #fff7e6; }
+  .sync-badge.bad { color: #c0392b; border-color: #f3c2bc; background: #fdf1f0; }
+  .sync-badge[hidden] { display: none; }
 
   /* ---------- 网格 ---------- */
   .grid { max-width: 1440px; margin: 0 auto; padding: 22px 24px 70px; display: grid; grid-template-columns: repeat(auto-fill, minmax(238px, 1fr)); gap: 24px 18px; }
@@ -276,6 +281,7 @@
   <div class="subbar-inner">
     <span class="live"></span><span id="summary">—</span>
     <span class="spacer"></span>
+    <span class="sync-badge" id="syncBadge" hidden></span>
     <div class="seg" id="seg">
       <button data-s="todo">待办</button>
       <button data-s="all">全部</button>
@@ -5035,10 +5041,27 @@ window.FEED_DATA = {
     }).catch(() => {});
   }
 
+  /* 三种模式都先写本机：远程同步失败时至少不丢 */
+  function persistLocal() {
+    try {
+      localStorage.setItem(LS_KEY, JSON.stringify([...collected]));
+      localStorage.setItem('feed:read', JSON.stringify([...read]));
+      localStorage.setItem('feed:hidden', JSON.stringify([...hidden]));
+    } catch (e) {}
+  }
+
   function saveState() {
+    persistLocal();
     if (SERVER) return pushStates();
     if (ghMode) return pushRemote();
-    try { localStorage.setItem(LS_KEY, JSON.stringify([...collected])); } catch (e) {}
+  }
+
+  function setSync(text, cls) {
+    const el = document.getElementById('syncBadge');
+    if (!el) return;
+    el.textContent = text;
+    el.className = 'sync-badge' + (cls ? ' ' + cls : '');
+    el.hidden = !text;
   }
 
   /* ---------- GitHub 同步 ---------- */
@@ -5057,7 +5080,7 @@ window.FEED_DATA = {
 
   let pushTimer = null;
   function pushRemote() {
-    if (!ghMode || !GH.token) return;
+    if (!ghMode || !GH.token) { setSync('仅本机', 'warn'); return; }
     clearTimeout(pushTimer);
     pushTimer = setTimeout(doPush, 700);
   }
@@ -5089,9 +5112,13 @@ window.FEED_DATA = {
         }),
       });
       if (!p.ok) throw new Error(`写入失败 ${p.status}`);
+      setSync('已同步', 'ok');
+      const o = document.querySelector('#offline');
+      if (o && ghMode) o.hidden = true;
       showToast('已同步到 GitHub');
     } catch (e) {
-      showToast('同步失败：' + e.message);
+      setSync('同步失败', 'bad');
+      showToast('同步失败（已存本机）：' + e.message);
     }
   }
 
@@ -5300,9 +5327,9 @@ window.FEED_DATA = {
   }
 
   function saveRead() {
+    persistLocal();
     if (SERVER) return pushStates();
     if (ghMode) return pushRemote();
-    try { localStorage.setItem('feed:read', JSON.stringify([...read])); } catch (e) {}
   }
 
   function openDetail(id, push) {
@@ -5405,9 +5432,9 @@ window.FEED_DATA = {
   }
 
   function saveHidden() {
+    persistLocal();
     if (SERVER) return pushStates();
     if (ghMode) return pushRemote();
-    try { localStorage.setItem('feed:hidden', JSON.stringify([...hidden])); } catch (e) {}
   }
 
   let toastTimer = null;
@@ -5688,9 +5715,21 @@ window.FEED_DATA = {
       }
     }
     if (s) {
-      collected = new Set(s.saved || []);
-      read = new Set(s.read || []);
-      hidden = new Set(s.hidden || []);
+      // 合并而不是覆盖：本机标记是最后一次真实操作，远程为空/旧的时候不能把它冲掉
+      const localSaved = collected, localRead = read, localHidden = hidden;
+      const remoteSaved = new Set(s.saved || []);
+      const remoteRead = new Set(s.read || []);
+      const remoteHidden = new Set(s.hidden || []);
+      collected = new Set([...localSaved, ...remoteSaved]);
+      read = new Set([...localRead, ...remoteRead]);
+      hidden = new Set([...localHidden, ...remoteHidden]);
+      persistLocal();
+
+      // 本机有、远程没有 → 说明上次没写成功，补推一次
+      const missing = [...localSaved].some((k) => !remoteSaved.has(k))
+        || [...localRead].some((k) => !remoteRead.has(k))
+        || [...localHidden].some((k) => !remoteHidden.has(k));
+      if (missing && GH.token) setTimeout(() => pushRemote(), 1500);
     }
     ghMode = true;
   }
@@ -5733,11 +5772,20 @@ window.FEED_DATA = {
     if (!apiOk && !ghMode && !GH.repo && !onPages) {
       const o = document.querySelector('#offline');
       if (o) o.hidden = false;
+      setSync('仅本机', 'warn');
     }
 
     if (ghMode) {
       const b = document.querySelector('#refreshBtn');
       if (b) b.textContent = '请求更新';
+      setSync(GH.token ? '已连接' : '仅本机', GH.token ? 'ok' : 'warn');
+      if (!GH.token) {
+        const o = document.querySelector('#offline');
+        if (o) {
+          o.hidden = false;
+          o.textContent = '标记目前只存在这台设备的浏览器里，换设备或清缓存就没了。点右上角 ⚙ 填一次 token，就能把已收/已阅同步到仓库。';
+        }
+      }
       if (GH.token) {
         try {
           const r = await fetch(`https://api.github.com/repos/${GH.repo}/contents/tasks/request.json?ref=${GH.branch}`, { headers: ghHeaders() });
