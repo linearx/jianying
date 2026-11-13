@@ -4311,14 +4311,19 @@ window.FEED_DATA = {
   });
 
   async function loadFromGitHub() {
-    const onPages = /\.github\.io$/i.test(location.hostname);
-    const raw = (p) => (onPages
-      ? `./${p}?t=${Date.now()}`
-      : `https://raw.githubusercontent.com/${GH.repo}/${GH.branch}/${p}?t=${Date.now()}`);
+    const tryJson = async (u) => {
+      const r = await fetch(u + (u.includes('?') ? '&' : '?') + 't=' + Date.now());
+      if (!r.ok) throw new Error(`${u} ${r.status}`);
+      return r.json();
+    };
 
-    const r = await fetch(raw('data/feed.json'));
-    if (!r.ok) throw new Error(`feed.json ${r.status}`);
-    const j = await r.json();
+    let j = null;
+    try {
+      j = await tryJson('./data/feed.json');
+    } catch (e) {
+      if (!GH.repo) throw e;
+      j = await tryJson(`https://raw.githubusercontent.com/${GH.repo}/${GH.branch}/data/feed.json`);
+    }
     if (!Array.isArray(j.items)) throw new Error('feed.json 格式不对');
 
     DATA.items = j.items.map((it, i) => ({ ...it, id: i }));
@@ -4328,10 +4333,25 @@ window.FEED_DATA = {
     DATA.items.forEach((it) => byId.set(it.id, it));
 
     let s = null;
-    try {
-      const sr = await fetch(raw('data/state.json'));
-      if (sr.ok) s = await sr.json();
-    } catch (e) { /* 没有 state.json 也没关系 */ }
+    if (GH.token && GH.repo) {
+      // 有 token 时走 API，避免 CDN 缓存读到旧状态
+      try {
+        const r = await fetch(`https://api.github.com/repos/${GH.repo}/contents/data/state.json?ref=${GH.branch}`, { headers: ghHeaders() });
+        if (r.ok) {
+          const j2 = await r.json();
+          const bin = atob((j2.content || '').replace(/\n/g, ''));
+          const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+          s = JSON.parse(new TextDecoder().decode(bytes));
+        }
+      } catch (e) { /* 落到下面的静态读取 */ }
+    }
+    if (!s) {
+      try { s = await tryJson('./data/state.json'); } catch (e) {
+        if (GH.repo) {
+          try { s = await tryJson(`https://raw.githubusercontent.com/${GH.repo}/${GH.branch}/data/state.json`); } catch (e2) {}
+        }
+      }
+    }
     if (s) {
       collected = new Set(s.saved || []);
       read = new Set(s.read || []);
@@ -4364,12 +4384,14 @@ window.FEED_DATA = {
       }
     }
 
-    if (!apiOk && (GH.repo || onPages)) {
+    if (!apiOk) {
       try {
         await loadFromGitHub();
       } catch (e) {
-        const o = document.querySelector('#offline');
-        if (o) { o.hidden = false; o.textContent = 'GitHub 读取失败：' + e.message; }
+        if (GH.repo || onPages) {
+          const o = document.querySelector('#offline');
+          if (o) { o.hidden = false; o.textContent = '读取失败：' + e.message; }
+        }
       }
     }
 
