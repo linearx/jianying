@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-13T10:25:26.029Z",
-  "count": 82,
+  "count": 88,
   "batches": [
     {
       "id": 4,
@@ -61,6 +61,7 @@
         "自省：自己做的内容被 AI 追平时的定位"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
@@ -68,6 +69,45 @@
         "hidden": false
       },
       "id": 0
+    },
+    {
+      "key": "https://www.bilibili.com/video/BV1JTWd6JEgZ",
+      "url": "https://www.bilibili.com/video/BV1JTWd6JEgZ",
+      "lane": "video",
+      "source": "B站",
+      "title": "【巫师】存款利率跌破1%后，AI给我画了一张闲钱收益地图",
+      "titleZh": "【巫师】存款利率跌破1%后，AI给我画了一张闲钱收益地图",
+      "author": "巫师财经",
+      "publishedAt": "2026-11-12T10:56:34.000Z",
+      "popularity": {
+        "label": "play",
+        "value": 185804
+      },
+      "excerpt": "用 ai 找回 本属于自己的利息",
+      "excerptZh": "",
+      "reason": "用 AI 把「存款利率跌破 1% 后钱放哪」做成一张收益地图，踩在当下的理财焦虑上。",
+      "tags": [],
+      "cover": "./data/covers/thumbs/6ad63293715c.jpg",
+      "lang": "zh",
+      "duration": 624,
+      "keyPoints": [
+        "讨论存款利率跌破 1% 后，普通人的闲钱还能放在哪",
+        "UP 主称用 AI 画出一张闲钱收益地图，简介写「用 AI 找回本属于自己的利息」",
+        "巫师财经，时长约 10 分钟，偏财经科普"
+      ],
+      "uses": [
+        "参考：用 AI 梳理存款、货基、债基等选项的收益对比",
+        "内容选题：利率下行下的个人理财"
+      ],
+      "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 1
     },
     {
       "key": "https://status.claude.com/incidents/nn11wk485zfn",
@@ -102,13 +142,53 @@
         "内容选题：AI 服务可用性与单点依赖"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 1
+      "id": 2
+    },
+    {
+      "key": "https://www.bilibili.com/video/BV1edWM63Ewd",
+      "url": "https://www.bilibili.com/video/BV1edWM63Ewd",
+      "lane": "video",
+      "source": "B站",
+      "title": "Claude Fable 5.2实测：94分刷爆了我们的私有题库，但我真用不起了！",
+      "titleZh": "Claude Fable 5.2实测：94分刷爆了我们的私有题库，但我真用不起了！",
+      "author": "程序员阿江-Relakkes",
+      "publishedAt": "2026-11-10T10:24:39.000Z",
+      "popularity": {
+        "label": "play",
+        "value": 127123
+      },
+      "excerpt": "Claude Fable 5.2 发布后，我们用 ModelDial 私有题库跑了一轮实测，拿到了 94 分，超过了此前榜单第一的 Opus 5.5。 这期还测试了频道的 3D 风力发电巡检系统：画面细节、交互和完成度都很能打。但跑完以后，额度消耗也让我冷静了下来…… Fable 5.2 到底强在哪？ 为什么最后我还是更推荐日常使用 Opus 5.5？ 视频里聊聊我的真实体验。 你会为了更强的能力选择 Fable 5.2，还是继续用 Opus 5.5？",
+      "excerptZh": "",
+      "reason": "拿私有题库实测 94 分，还给了一个反向结论：日常仍更推荐 Opus 5.5。",
+      "tags": [],
+      "cover": "./data/covers/thumbs/662e560f2f2c.jpg",
+      "lang": "zh",
+      "duration": 476,
+      "keyPoints": [
+        "用 ModelDial 私有题库实测 Claude Fable 5.2 拿到 94 分，超过此前榜首 Opus 5.5",
+        "同一期还测了 3D 风力发电巡检系统，画面细节、交互和完成度都不错",
+        "作者说额度消耗太大，日常仍更推荐 Opus 5.5"
+      ],
+      "uses": [
+        "判断：模型选型要不要为高分多付成本",
+        "方法参考：用自己的题库做模型评测"
+      ],
+      "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 3
     },
     {
       "key": "https://muzegen.ai",
@@ -143,13 +223,53 @@
         "观察：AI 音乐工具开始拼「和现有工作流兼容」"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 2
+      "id": 4
+    },
+    {
+      "key": "https://www.bilibili.com/video/BV1eKWb6NEDa",
+      "url": "https://www.bilibili.com/video/BV1eKWb6NEDa",
+      "lane": "video",
+      "source": "B站",
+      "title": "Personal AI是什么？他真的可以拯救我吗？如何使用Personal Agent？",
+      "titleZh": "Personal AI是什么？他真的可以拯救我吗？如何使用Personal Agent？",
+      "author": "Git源宝",
+      "publishedAt": "2026-11-09T09:23:16.000Z",
+      "popularity": {
+        "label": "play",
+        "value": 421301
+      },
+      "excerpt": "还在把 AI 只当聊天工具用吗？Personal Agent 来了！那它能帮我们干哪些实事？上手难不难？ 本期内容将完整详细地教你用手机操作，零基础也能学！",
+      "excerptZh": "",
+      "reason": "零基础手机教程，把「Personal Agent 能干什么、怎么上手」讲成可跟着做的流程。",
+      "tags": [],
+      "cover": "./data/covers/thumbs/7039a63c5a0a.jpg",
+      "lang": "zh",
+      "duration": 304,
+      "keyPoints": [
+        "面向零基础，教在手机上使用 Personal Agent",
+        "主张别把 AI 只当聊天工具，让它帮忙干实事",
+        "时长约 5 分钟，偏操作教学"
+      ],
+      "uses": [
+        "自用：照着开通并试一个 Personal Agent",
+        "内容选题：个人 AI agent 的入门路径"
+      ],
+      "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 5
     },
     {
       "key": "https://challenge.timenet.ai",
@@ -184,13 +304,53 @@
         "选题：时序 AI 在工业、能源、医疗的落地"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 3
+      "id": 6
+    },
+    {
+      "key": "https://www.bilibili.com/video/BV1X84q6hEJM",
+      "url": "https://www.bilibili.com/video/BV1X84q6hEJM",
+      "lane": "video",
+      "source": "B站",
+      "title": "爆肝50小时！我用AI做了一款“坑人”游戏！",
+      "titleZh": "爆肝50小时！我用AI做了一款“坑人”游戏！",
+      "author": "幕川北",
+      "publishedAt": "2026-11-06T10:13:42.000Z",
+      "popularity": {
+        "label": "play",
+        "value": 1393492
+      },
+      "excerpt": "注：由于游戏是先用豆包工作开发完成，随后才使用AI对开发情节进行还原，因此视频中的部分画面与实际开发过程可能存在细微差异 如果大家有什么好玩的机关玩法，欢迎发在评论区，我将会把有趣的创意加入游戏中！ 最后不要忘记关注我！",
+      "excerptZh": "",
+      "reason": "50 小时用 AI 做出一款完整小游戏，能看到「一个人 + AI」的实际完成度。",
+      "tags": [],
+      "cover": "./data/covers/thumbs/60ea66019c91.jpg",
+      "lang": "zh",
+      "duration": 1052,
+      "keyPoints": [
+        "UP 主花约 50 小时、用 AI 做出了一款「坑人」机关游戏",
+        "简介说明游戏先用 AI 工具开发完成，之后才用 AI 还原开发过程，画面与实际会有差异",
+        "时长约 17 分钟，记录开发过程"
+      ],
+      "uses": [
+        "参考：一个人用 AI 从零做小游戏的工作流",
+        "选题：AI 游戏开发的实际工时与完成度"
+      ],
+      "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 7
     },
     {
       "key": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
@@ -225,13 +385,53 @@
         "内容选题：欧洲在 AI 竞赛里的位置"
       ],
       "gap": "reuters.com 正文抓取失败（站点反爬/网络不通），关键信息依据转载同一路透稿的全文。",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 4
+      "id": 8
+    },
+    {
+      "key": "https://www.bilibili.com/video/BV1HE486dE3h",
+      "url": "https://www.bilibili.com/video/BV1HE486dE3h",
+      "lane": "video",
+      "source": "B站",
+      "title": "这波失业潮可能刚刚开始，记录2026年的财经博主工作流变化，人类会一败涂地吗？",
+      "titleZh": "这波失业潮可能刚刚开始，记录2026年的财经博主工作流变化，人类会一败涂地吗？",
+      "author": "在下刀哥",
+      "publishedAt": "2026-11-05T10:11:59.000Z",
+      "popularity": {
+        "label": "play",
+        "value": 257640
+      },
+      "excerpt": "上海出身大阪工作，独立财经研究者，致力于AI量化研究各种高胜率的投资交易策略。还背着14年房贷，正在戒烟，每天3000步坚持锻炼减肥中，充电会员有充足内部分享和交流 节目内容不作为投资建议，请用户自行承担相应责任。 刀哥会尽最大努力确保所提供信息的准确性，对于因使用本频道信息而产生的任何损失，频道运营方概不承担责任。 如引用刀哥视频，支持剪辑与二次传播。",
+      "excerptZh": "",
+      "reason": "财经博主记录 AI 冲击下的工作流变化，是「AI 替代焦虑」的一手样本。",
+      "tags": [],
+      "cover": "./data/covers/thumbs/e222ccd2596a.jpg",
+      "lang": "zh",
+      "duration": 1116,
+      "keyPoints": [
+        "UP 主「在下刀哥」记录 2026 年财经博主工作流在 AI 冲击下的变化",
+        "标题判断「这波失业潮可能刚刚开始」，讨论人类会不会一败涂地",
+        "时长约 19 分钟，简介主要是频道介绍与免责声明"
+      ],
+      "uses": [
+        "观察：AI 对内容行业就业的影响",
+        "选题：财经内容的生产流程怎么被 AI 改写"
+      ],
+      "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 9
     },
     {
       "key": "https://github.com/juanyque/agent-brain",
@@ -266,13 +466,53 @@
         "内容选题：agent 的「记忆」怎么工程化"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 5
+      "id": 10
+    },
+    {
+      "key": "https://www.bilibili.com/video/BV14cxQ6RE9e",
+      "url": "https://www.bilibili.com/video/BV14cxQ6RE9e",
+      "lane": "video",
+      "source": "B站",
+      "title": "Coze 下线，AI工作流时代结束了....",
+      "titleZh": "Coze 下线，AI工作流时代结束了....",
+      "author": "AI编程布道者-金角大王",
+      "publishedAt": "2026-11-04T08:52:29.000Z",
+      "popularity": {
+        "label": "play",
+        "value": 274912
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "标题直接宣告「Coze 下线，AI 工作流时代结束」——不管结论对不对，都是平台依赖风险的提醒。",
+      "tags": [],
+      "cover": "./data/covers/thumbs/fd257fa2a218.jpg",
+      "lang": "zh",
+      "duration": 379,
+      "keyPoints": [
+        "视频标题称 Coze 下线，讨论「AI 工作流时代」是否就此结束",
+        "简介为空，没有给出下线原因、影响范围或迁移方案",
+        "时长约 6 分钟，UP 主为 AI 编程布道者"
+      ],
+      "uses": [
+        "判断：把自动化搭在单一平台上的风险",
+        "选题：低代码 AI 工作流平台的退场与迁移"
+      ],
+      "gap": "未获取字幕与有效简介（B 站字幕接口需登录），要点依据标题、UP 主与时长整理。",
+      "subtitleChars": 0,
+      "batchId": 4,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 11
     },
     {
       "key": "https://news.ycombinator.com/item?id=50480754",
@@ -307,13 +547,14 @@
         "内容选题：agent 写码之后的评审瓶颈"
       ],
       "gap": "帖子刚发布，回复很少，关键信息主要来自提问本身。",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 6
+      "id": 12
     },
     {
       "key": "https://www.f-secure.com/en/partners/illuminate-research/ai-harms-taxonomy",
@@ -348,13 +589,14 @@
         "内容选题：AI 安全责任怎么分层"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 7
+      "id": 13
     },
     {
       "key": "https://coyotetracks.org/blog/right-amount-of-ai/",
@@ -389,13 +631,14 @@
         "内容选题：AI 编程的伦理与技能流失"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 8
+      "id": 14
     },
     {
       "key": "https://p99log.com/designing-tools-for-ai-agents/",
@@ -431,13 +674,14 @@
         "内容选题：agent / MCP 工具的工程化设计"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 4,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 9
+      "id": 15
     },
     {
       "key": "https://github.com/kobima6813/fossil-versions",
@@ -472,13 +716,14 @@
         "方法借鉴：用版本号这类副产物做取证"
       ],
       "gap": "基于仓库 README 整理。",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 10
+      "id": 16
     },
     {
       "key": "https://sspai.com/post/118153",
@@ -510,13 +755,14 @@
         "内容选题：AI 辅助科研的边界"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 11
+      "id": 17
     },
     {
       "key": "https://concernedaistaff.org/",
@@ -551,13 +797,14 @@
         "内容选题：造 AI 的人怎么看 AI 风险"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 12
+      "id": 18
     },
     {
       "key": "https://rocketgit.com/user/catalinux/ai-drop",
@@ -592,13 +839,14 @@
         "内容选题：内容站怎么和 AI 爬虫相处"
       ],
       "gap": "原文无正文，以上据标题与项目定位整理。",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 13
+      "id": 19
     },
     {
       "key": "https://cs329z.stanford.edu/",
@@ -633,13 +881,14 @@
         "团队参考：agent 项目的必备环节清单"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 14
+      "id": 20
     },
     {
       "key": "https://news.ycombinator.com/item?id=50479788",
@@ -673,13 +922,14 @@
         "产品参考：反 slop 的需求在哪"
       ],
       "gap": "讨论帖正文未抓到，以上据标题整理。",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 15
+      "id": 21
     },
     {
       "key": "https://mlq.ai/news/tsmc-says-employee-personal-data-was-posted-online-from-a-cloud-providers-systems/",
@@ -713,13 +963,14 @@
         "内容选题：AI 供应链的薄弱环节"
       ],
       "gap": "原文 403，以上据标题整理。",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 16
+      "id": 22
     },
     {
       "key": "https://twitter.com/willdepue/status/2120992457630326841",
@@ -753,13 +1004,14 @@
         "内容选题：算力取证怎么做"
       ],
       "gap": "原帖未抓取，以上据标题整理。",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 17
+      "id": 23
     },
     {
       "key": "https://www.bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures",
@@ -793,13 +1045,14 @@
         "内容选题：AI 公司的监管站位"
       ],
       "gap": "彭博原文未抓取，以上据标题整理。",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 18
+      "id": 24
     },
     {
       "key": "https://runitlocal.io/",
@@ -834,13 +1087,14 @@
         "内容选题：本地推理的体验门槛"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 19
+      "id": 25
     },
     {
       "key": "https://wonderchat.io/",
@@ -875,13 +1129,14 @@
         "内容选题：AI 客服的真实解决率"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 3,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 20
+      "id": 26
     },
     {
       "key": "https://nachi065.github.io/AI-Security-Wiki/",
@@ -916,13 +1171,14 @@
         "内容选题：AI 安全的落地清单长什么样"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 21
+      "id": 27
     },
     {
       "key": "https://sspai.com/post/118512",
@@ -954,13 +1210,14 @@
         "内容选题：AI 时代「慢产品」怎么活"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 22
+      "id": 28
     },
     {
       "key": "https://usediorama.com/rick-and-morty",
@@ -995,13 +1252,14 @@
         "自用：把文章转成视频试试"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 23
+      "id": 29
     },
     {
       "key": "https://github.com/sid732/loose-ends",
@@ -1036,13 +1294,14 @@
         "内容选题：agent 写码的隐性成本"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 24
+      "id": 30
     },
     {
       "key": "https://github.com/getzipzi/zipzi-2d",
@@ -1077,13 +1336,14 @@
         "内容选题：人和 agent 共享编辑状态"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 25
+      "id": 31
     },
     {
       "key": "https://news.ycombinator.com/item?id=50477517",
@@ -1117,13 +1377,14 @@
         "内容选题：AI 署名与信任"
       ],
       "gap": "讨论帖正文未抓到，以上据标题整理。",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 26
+      "id": 32
     },
     {
       "key": "https://www.notion.com/en-gb/security/advisories/security-incident-involving-a-third-party-ai-vendor",
@@ -1158,13 +1419,14 @@
         "内容选题：AI 中间商的数据风险"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 27
+      "id": 33
     },
     {
       "key": "https://grow-bonsai.app/",
@@ -1199,13 +1461,14 @@
         "自用：试试它的技能拆解方式"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 28
+      "id": 34
     },
     {
       "key": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
@@ -1240,13 +1503,14 @@
         "内容选题：公司治理与个人崇拜"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 2,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 29
+      "id": 35
     },
     {
       "key": "https://latent.space/p/artcraft/",
@@ -1282,13 +1546,14 @@
         "判断输入：开源替代商业软件的新一轮机会"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 1,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 30
+      "id": 36
     },
     {
       "key": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare",
@@ -1324,13 +1589,14 @@
         "判断输入：大厂在医疗赛道的实际进度"
       ],
       "gap": "原文抓取失败，以上据标题与公开定位整理。",
+      "subtitleChars": 0,
       "batchId": 1,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 31
+      "id": 37
     },
     {
       "key": "https://aircraftdefects.com/",
@@ -1366,13 +1632,14 @@
         "自用：查航班或机型时可以拿它当参考"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 1,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 32
+      "id": 38
     },
     {
       "key": "https://thingspool.net/shards-of-sanity/page-5.html",
@@ -1407,13 +1674,14 @@
         "内容选题：AI 时代还需要软件哲学吗"
       ],
       "gap": "原文为长文，仅取开头部分。",
+      "subtitleChars": 0,
       "batchId": 1,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 33
+      "id": 39
     },
     {
       "key": "https://floxolab.com/ai-crawler-checker",
@@ -1449,13 +1717,14 @@
         "技术：给自己的站加一份爬虫访问清单"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 1,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 34
+      "id": 40
     },
     {
       "key": "https://www.theatlantic.com/international/2026/11/nvidia-china-ai-regulation/689387/",
@@ -1490,13 +1759,14 @@
         "内容选题：一家公司如何被地缘政治定价"
       ],
       "gap": "原文抓取失败，以上据标题整理。",
+      "subtitleChars": 0,
       "batchId": 1,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 35
+      "id": 41
     },
     {
       "key": "https://www.seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/",
@@ -1532,13 +1802,14 @@
         "管理参考：团队规模与协调成本的重新计算"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 1,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 36
+      "id": 42
     },
     {
       "key": "https://www.theregister.com/ai-and-ml/2026/11/13/alibabas-qwen38-re-educated-with-a-more-western-worldview/5309555",
@@ -1573,13 +1844,14 @@
         "内容选题：一个模型能有几种世界观"
       ],
       "gap": "原文正文抓取失败，以上据标题整理。",
+      "subtitleChars": 0,
       "batchId": 1,
       "state": {
         "saved": false,
         "read": true,
         "hidden": false
       },
-      "id": 37
+      "id": 43
     },
     {
       "key": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
@@ -1615,13 +1887,14 @@
         "谈资素材：AI 叙事与专业权威冲突的典型案例"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 38
+      "id": 44
     },
     {
       "key": "https://latent.space/p/jev-revolution/",
@@ -1654,13 +1927,14 @@
         "自用：挑一个场景照抄"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 39
+      "id": 45
     },
     {
       "key": "https://arxiv.org/abs/2611.15023v1",
@@ -1693,13 +1967,14 @@
         "方法：把大决策拆成可预测的子问题"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 40
+      "id": 46
     },
     {
       "key": "https://github.com/janestreet/agent_skills",
@@ -1735,13 +2010,14 @@
         "自用：抄一份它的目录结构"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 41
+      "id": 47
     },
     {
       "key": "https://www.bilibili.com/video/BV19JfKY8Eev",
@@ -1774,13 +2050,14 @@
         "消费决策：要买的话直接看实测段落"
       ],
       "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 42
+      "id": 48
     },
     {
       "key": "https://sspai.com/post/118966",
@@ -1813,13 +2090,14 @@
         "自用：关注继任者的对华与产品策略"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 43
+      "id": 49
     },
     {
       "key": "https://schelling-atlas.com/",
@@ -1855,13 +2133,14 @@
         "内容选题：「谢林点」概念在 AI 时代的复现"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 44
+      "id": 50
     },
     {
       "key": "https://latent.space/p/codex-work/",
@@ -1894,13 +2173,14 @@
         "判断输入：哪些任务该留在本地，哪些交给云"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 45
+      "id": 51
     },
     {
       "key": "https://arxiv.org/abs/2611.15006v1",
@@ -1933,13 +2213,14 @@
         "选型：和自己的 harness 做对比"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 46
+      "id": 52
     },
     {
       "key": "https://github.com/deepseek-ai/dsh-superagent-prototype",
@@ -1975,13 +2256,14 @@
         "自用：对照自己现在的工作流"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 47
+      "id": 53
     },
     {
       "key": "https://www.bilibili.com/video/BV1W5fAYTEMk",
@@ -2014,13 +2296,14 @@
         "自用：考虑本地部署前先看它的配置"
       ],
       "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题与时长整理。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 48
+      "id": 54
     },
     {
       "key": "https://sspai.com/post/85735",
@@ -2054,13 +2337,14 @@
         "探索位：故意保留的非 AI 内容样本"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 49
+      "id": 55
     },
     {
       "key": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
@@ -2095,13 +2379,14 @@
         "产品决策：To B 教育产品要留「可选退出」的开关"
       ],
       "gap": "原文返回 403，未能提取正文。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 50
+      "id": 56
     },
     {
       "key": "https://latent.space/p/resend/",
@@ -2134,13 +2419,14 @@
         "自用：检查自家 API 文档能不能被 agent 用起来"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 51
+      "id": 57
     },
     {
       "key": "https://arxiv.org/abs/2611.14997v1",
@@ -2173,13 +2459,14 @@
         "自用：难题先让模型重述一遍"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 52
+      "id": 58
     },
     {
       "key": "https://github.com/heydamir/unslop",
@@ -2215,13 +2502,14 @@
         "产品：给生成类工具加一层「设计后处理」"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 53
+      "id": 59
     },
     {
       "key": "https://www.bilibili.com/video/BV1AXZ4YvEXY",
@@ -2253,13 +2541,14 @@
         "内容选题：硬件厂商的 AI 话术套路"
       ],
       "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 54
+      "id": 60
     },
     {
       "key": "https://sspai.com/post/118935",
@@ -2292,13 +2581,14 @@
         "自用：了解 Xcode 里的 agent 编程"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 55
+      "id": 61
     },
     {
       "key": "https://lars.yencken.org/have-ai-timelines-moved/",
@@ -2333,13 +2623,14 @@
         "风险预案：评估 2027 年前后能力跃迁的影响"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 56
+      "id": 62
     },
     {
       "key": "https://latent.space/p/naiveai/",
@@ -2372,13 +2663,14 @@
         "自用：把批量任务切给快模型"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 57
+      "id": 63
     },
     {
       "key": "https://arxiv.org/abs/2611.14980v1",
@@ -2411,13 +2703,14 @@
         "工程：给日志补上归因需要的字段"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 58
+      "id": 64
     },
     {
       "key": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
@@ -2453,13 +2746,14 @@
         "风险：把工作流绑在单一插件上的风险"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 59
+      "id": 65
     },
     {
       "key": "https://www.bilibili.com/video/BV1cUoDYaEdb",
@@ -2492,13 +2786,14 @@
         "判断：扣子这类平台适合做到什么程度"
       ],
       "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 60
+      "id": 66
     },
     {
       "key": "https://medium.com/young-coder/7-habits-of-highly-ineffective-ai-programmers-f40febb3b6e7",
@@ -2533,13 +2828,14 @@
         "内容选题：AI 编程的反模式清单"
       ],
       "gap": "原文无法抓取，未能提取正文。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 61
+      "id": 67
     },
     {
       "key": "https://simonwillison.net/2026/Nov/10/muse-ember/",
@@ -2572,13 +2868,14 @@
         "选型：按任务难度分层用模型"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 62
+      "id": 68
     },
     {
       "key": "https://arxiv.org/abs/2611.14975v1",
@@ -2611,13 +2908,14 @@
         "自用：给自建评测加分层指标"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 63
+      "id": 69
     },
     {
       "key": "https://github.com/yetone/magpie",
@@ -2653,13 +2951,14 @@
         "选型：和同类切换工具对比"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 64
+      "id": 70
     },
     {
       "key": "https://www.bilibili.com/video/BV1hsZCYZEMh",
@@ -2692,13 +2991,14 @@
         "自用：决定要不要继续投入 ComfyUI"
       ],
       "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 65
+      "id": 71
     },
     {
       "key": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
@@ -2733,13 +3033,14 @@
         "产品决策：做创作类 AI 工具要考虑「要不要披露」"
       ],
       "gap": "原文有人机验证，未能提取正文。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 66
+      "id": 72
     },
     {
       "key": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
@@ -2772,13 +3073,14 @@
         "自用：家里类似的疑难问题试一次"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 67
+      "id": 73
     },
     {
       "key": "https://arxiv.org/abs/2611.14960v1",
@@ -2811,13 +3113,14 @@
         "产品设计：怎么做进度与结束提示"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 68
+      "id": 74
     },
     {
       "key": "https://github.com/browser-use/jev-ultrafast",
@@ -2853,13 +3156,14 @@
         "自用：批量网页任务先拿它试"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 69
+      "id": 75
     },
     {
       "key": "https://www.bilibili.com/video/BV1igSdY7EFE",
@@ -2892,13 +3196,14 @@
         "判断：这是产品推广向内容，结论要打折"
       ],
       "gap": "未获取字幕（B 站字幕接口需登录），要点依据标题、简介与时长整理。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 70
+      "id": 76
     },
     {
       "key": "https://birdyfoot.com/research/ai-tool-vulnerabilities",
@@ -2934,13 +3239,14 @@
         "自用：给团队定一份 AI 工具准入清单"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 71
+      "id": 77
     },
     {
       "key": "https://simonwillison.net/2026/Nov/9/details-summary/",
@@ -2973,13 +3279,14 @@
         "自用：改一版自己的 PR 模板"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 72
+      "id": 78
     },
     {
       "key": "https://arxiv.org/abs/2611.14935v1",
@@ -3012,13 +3319,14 @@
         "方法：反事实测试可以迁移到别的领域"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 73
+      "id": 79
     },
     {
       "key": "https://www.psypost.org/ai-written-peer-reviews-outscored-top-human-experts-in-blind-comparisons-harvard-working-paper-finds/",
@@ -3053,13 +3361,14 @@
         "方法借鉴：用盲评设计来测试 AI 的真实水平"
       ],
       "gap": "原文返回 403，未能提取正文。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 74
+      "id": 80
     },
     {
       "key": "https://latent.space/p/cs146s/",
@@ -3092,13 +3401,14 @@
         "自用：把练习从「写」改成「评审」"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 75
+      "id": 81
     },
     {
       "key": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
@@ -3133,13 +3443,14 @@
         "内容选题：AI 泡沫论的正反方对照"
       ],
       "gap": "原文无法抓取，未能提取正文。",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 76
+      "id": 82
     },
     {
       "key": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
@@ -3172,13 +3483,14 @@
         "选型：现在用还是等降价"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 77
+      "id": 83
     },
     {
       "key": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
@@ -3214,13 +3526,14 @@
         "自用：拿它跑隐私敏感的任务"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 78
+      "id": 84
     },
     {
       "key": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
@@ -3256,13 +3569,14 @@
         "自用：要搭 agent 平台先看它的取舍"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 79
+      "id": 85
     },
     {
       "key": "https://github.com/hyperionaidev/smolmaxxing/",
@@ -3297,13 +3611,14 @@
         "内容选题：端侧的两条路线之争"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 80
+      "id": 86
     },
     {
       "key": "https://ipo.anthropic.com/us/",
@@ -3339,13 +3654,14 @@
         "职业参考：行业周期处在什么位置"
       ],
       "gap": "",
+      "subtitleChars": 0,
       "batchId": 0,
       "state": {
         "saved": false,
         "read": false,
         "hidden": false
       },
-      "id": 81
+      "id": 87
     }
   ]
 }

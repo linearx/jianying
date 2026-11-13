@@ -103,7 +103,7 @@
   .cover.has-img .glyph { display: none; }
   .thumb:hover .glyph { transform: scale(1.08) translateY(-2px); }
   .src { position: absolute; top: 9px; left: 11px; z-index: 1; color: rgba(255,255,255,.96); font-size: 11.5px; letter-spacing: .04em; text-shadow: 0 1px 4px rgba(0,0,0,.45); }
-  .badge { position: absolute; right: 8px; bottom: 8px; z-index: 1; background: rgba(0,0,0,.45); color: #fff; font-size: 11px; padding: 2px 7px; border-radius: 3px; }
+  .badge { position: absolute; right: 8px; bottom: 8px; z-index: 1; background: rgba(0,0,0,.45); color: #fff; font-size: 11px; padding: 2px 7px; border-radius: 3px; font-variant-numeric: tabular-nums; }
   .thumb-actions { position: absolute; right: 8px; top: 8px; z-index: 2; display: flex; flex-direction: column; gap: 6px; opacity: 0; transform: scale(.94); transition: .16s; }
   .thumb:hover .thumb-actions { opacity: 1; transform: none; }
   .act { width: 28px; height: 28px; border-radius: 50%; border: 0; background: rgba(255,255,255,.94); color: #61666d; font-size: 15px; line-height: 1; display: grid; place-items: center; box-shadow: 0 2px 8px rgba(0,0,0,.18); transition: .15s; }
@@ -541,6 +541,8 @@
     $('#savedBtn').classList.toggle('on', filter === 'saved');
   }
 
+  const fmtDur = (s) => (s ? `${Math.floor(s / 60)}:${String(Math.round(s) % 60).padStart(2, '0')}` : '');
+
   function coverTag(it, cls) {
     const lane = LANE[it.lane] || LANE.blog;
     const img = it.cover
@@ -550,7 +552,7 @@
       ${img}
       <span class="src">${esc(it.source)}</span>
       <span class="glyph">${lane.char}</span>
-      <span class="badge">${lane.label}</span>
+      <span class="badge">${lane.label}${it.duration ? ` · ${fmtDur(it.duration)}` : ''}</span>
     </div>`;
   }
 
@@ -708,6 +710,11 @@
           <dt>作者</dt><dd>${esc(it.author || '未标注')}</dd>
           <dt>原文语言</dt><dd>${it.lang === 'zh' ? '中文' : '英文'}</dd>
           <dt>体裁</dt><dd>${meta.form}${dur ? ` <span class="dim">· ${dur}</span>` : ''}</dd>
+          ${it.lane === 'video'
+            ? `<dt>字幕</dt><dd>${it.subtitleChars
+              ? `有，约 ${it.subtitleChars.toLocaleString('en-US')} 字 <span class="dim">· 关键信息据此整理</span>`
+              : '<span class="dim">没抓到（B站未提供，或没配登录 Cookie）</span>'}</dd>`
+            : ''}
         </dl>
         <div class="tip"><b>${esc(it.source)}：</b>${esc(SOURCE_PROFILE[it.source] || '')}<br /><b>怎么读：</b>${meta.note}</div>
       </div>
@@ -719,7 +726,7 @@
           <dt>热度</dt><dd>${popText}</dd>
           <dt>收录时间</dt><dd>${esc(collectedAt)}</dd>
           <dt>编号</dt><dd><span class="mono">#${String(it.id + 1).padStart(2, '0')}</span> <span class="dim">/ ${DATA.count}</span></dd>
-          <dt>封面</dt><dd>${it.cover ? '取自原文的社交分享图' : '<span class="dim">原文未提供，使用色块代替</span>'}</dd>
+          <dt>封面</dt><dd>${it.cover ? (it.lane === 'video' ? '视频封面图' : '取自原文的社交分享图') : '<span class="dim">原文未提供，使用色块代替</span>'}</dd>
           <dt>原文</dt><dd>${it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener" class="mono" style="color:var(--blue)">${esc(it.url.length > 62 ? it.url.slice(0, 62) + '…' : it.url)}</a>` : '<span class="dim">未提供（手机投放的内容可能没带链接）</span>'}</dd>
         </dl>
       </div>`;
