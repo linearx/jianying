@@ -1,7 +1,19 @@
 {
-  "generatedAt": "2026-11-13T05:48:30.331Z",
-  "count": 52,
+  "generatedAt": "2026-11-13T08:15:19.821Z",
+  "count": 72,
   "batches": [
+    {
+      "id": 3,
+      "createdAt": "2026-11-13T08:15:19.855Z",
+      "note": "refresh",
+      "queued": 12
+    },
+    {
+      "id": 2,
+      "createdAt": "2026-11-13T05:54:15.336Z",
+      "note": "refresh",
+      "queued": 12
+    },
     {
       "id": 1,
       "createdAt": "2026-11-13T05:53:28.443Z",
@@ -10,6 +22,857 @@
     }
   ],
   "items": [
+    {
+      "key": "https://github.com/kobima6813/fossil-versions",
+      "url": "https://github.com/kobima6813/fossil-versions",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Fossil versions: a fingerprint of AI-written code in 250k NPM packages",
+      "titleZh": "AI 写的代码会留下「化石版本」特征：250 万个 npm 包里的证据",
+      "author": "kobima6813",
+      "publishedAt": "2026-11-13T08:13:57.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "用依赖版本号反推 manifest 是不是模型凭记忆写的，思路很巧。",
+      "tags": [
+        "AI编程",
+        "数据"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "随机抽样 25 万个 npm 包，看首个版本里写死的依赖版本号",
+        "发现一批「比发布时间还新」的版本号，只可能来自模型记忆而非真实安装",
+        "作者强调数据不能证明具体是谁写的，只能指向 manifest 是生成的"
+      ],
+      "uses": [
+        "判断输入：怎么识别 AI 生成的代码痕迹",
+        "方法借鉴：用版本号这类副产物做取证"
+      ],
+      "gap": "基于仓库 README 整理。",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 0
+    },
+    {
+      "key": "https://sspai.com/post/118153",
+      "url": "https://sspai.com/post/118153",
+      "lane": "zh",
+      "source": "少数派",
+      "title": "研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验",
+      "titleZh": "研究生如何用 AI 辅助完成一篇综述",
+      "author": "胡拉图说",
+      "publishedAt": "2026-11-13T07:00:00.000Z",
+      "popularity": null,
+      "excerpt": "AI 改变的不是科研写作本身，而是我们完成科研写作时的工作方式。 查看全文",
+      "excerptZh": "",
+      "reason": "从选题、检索到绘图、格式检查，全流程的工具分工写得很具体。",
+      "tags": [
+        "科研",
+        "AI写作"
+      ],
+      "cover": "",
+      "lang": "zh",
+      "duration": null,
+      "keyPoints": [
+        "按「选题—检索—证据整理—写作—绘图—格式检查」拆解综述流程",
+        "工具组合是 AI + Zotero + Keynote + AI Agent",
+        "强调保留人工核验环节，而不是让 AI 代写"
+      ],
+      "uses": [
+        "自用：照这套流程写综述",
+        "内容选题：AI 辅助科研的边界"
+      ],
+      "gap": "",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 1
+    },
+    {
+      "key": "https://concernedaistaff.org/",
+      "url": "https://concernedaistaff.org/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Coalition of Concerned AI Staff",
+      "titleZh": "关心 AI 的员工联盟：在造前沿模型的公司内部组织起来",
+      "author": "Bluestein",
+      "publishedAt": "2026-11-13T08:10:42.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "一线员工对「自己在造什么」公开发声，是行业治理的新变量。",
+      "tags": [
+        "行业",
+        "治理"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "由前沿 AI 公司员工组成的跨公司联盟",
+        "主张从业者对技术用途负有公共责任",
+        "组织跨实验室的会议和工作组"
+      ],
+      "uses": [
+        "行业观察：内部异议如何组织化",
+        "内容选题：造 AI 的人怎么看 AI 风险"
+      ],
+      "gap": "",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 2
+    },
+    {
+      "key": "https://rocketgit.com/user/catalinux/ai-drop",
+      "url": "https://rocketgit.com/user/catalinux/ai-drop",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Show HN: AI-drop project – drop traffic fast from misbehaving crawlers (AGPL)",
+      "titleZh": "AI-drop：给乱抓内容的爬虫限流",
+      "author": "catab",
+      "publishedAt": "2026-11-13T08:05:44.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 2
+      },
+      "excerpt": "Hello! All started with 4 million requests / day on rocketgit.com (AGPL git hosting). Instead of thousands. Enough is enough! Presentation (8 pages): https://rocketgit.com/user/catalinux/ai-drop/artefacts/downl... So, I built AI-drop free-software project…",
+      "excerptZh": "",
+      "reason": "内容站对抗 AI 抓取的开源小工具，思路直接。",
+      "tags": [
+        "工具",
+        "AI爬虫"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "开源项目（AGPL），用来对行为不当的爬虫快速限流",
+        "面向内容站，解决被 AI 爬虫高频抓取的问题",
+        "原文页面为空，细节需看仓库"
+      ],
+      "uses": [
+        "自用：站点被爬爆时的应急手段",
+        "内容选题：内容站怎么和 AI 爬虫相处"
+      ],
+      "gap": "原文无正文，以上据标题与项目定位整理。",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 3
+    },
+    {
+      "key": "https://cs329z.stanford.edu/",
+      "url": "https://cs329z.stanford.edu/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Stanford CS 329Z: Engineering AI Agents",
+      "titleZh": "斯坦福 CS 329Z：工程化 AI Agent 课程",
+      "author": "chirau",
+      "publishedAt": "2026-11-13T07:51:57.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "从 LLM 流水线到复合系统再到自主 agent，课纲本身就是一张能力地图。",
+      "tags": [
+        "课程",
+        "agent"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "课程覆盖从 LLM 流水线到复合 AI 系统再到自主 agent",
+        "强调问题分解、组件选择、数据整理和评测设计",
+        "核心是工程取舍，不是调 prompt"
+      ],
+      "uses": [
+        "学习路线：按这个课纲补能力",
+        "团队参考：agent 项目的必备环节清单"
+      ],
+      "gap": "",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 4
+    },
+    {
+      "key": "https://news.ycombinator.com/item?id=50479788",
+      "url": "https://news.ycombinator.com/item?id=50479788",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Ask HN: Is there hope against slop?",
+      "titleZh": "HN 讨论：面对 AI 生成的垃圾内容，还有希望吗",
+      "author": "yuchi",
+      "publishedAt": "2026-11-13T07:46:23.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 2
+      },
+      "excerpt": "Long time HNer here, mostly lurker. Developer turned agent steerer yada yada yada, you all know the story. I'm writing because I think we are missing something important in the discourse on slop. The realization that occured to me recently is that it is simply not possible for media (social,…",
+      "excerptZh": "",
+      "reason": "社区情绪样本，能看到大家对「slop」的耐受度。",
+      "tags": [
+        "讨论",
+        "AI内容"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "讨论「slop」（AI 生成的垃圾内容）是否正在淹没信息流",
+        "属于社区情绪样本，不是研究结论"
+      ],
+      "uses": [
+        "内容选题：信息质量下降的体感",
+        "产品参考：反 slop 的需求在哪"
+      ],
+      "gap": "讨论帖正文未抓到，以上据标题整理。",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 5
+    },
+    {
+      "key": "https://mlq.ai/news/tsmc-says-employee-personal-data-was-posted-online-from-a-cloud-providers-systems/",
+      "url": "https://mlq.ai/news/tsmc-says-employee-personal-data-was-posted-online-from-a-cloud-providers-systems/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "TSMC Has Been Hacked",
+      "titleZh": "台积电称员工个人数据从云服务商系统泄露",
+      "author": "pretext",
+      "publishedAt": "2026-11-13T07:37:59.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 6
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "AI 供应链上游的安全事件，影响面比一般公司大。",
+      "tags": [
+        "安全",
+        "行业"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "台积电确认员工个人数据经由云服务商系统被公开",
+        "事件发生在 AI 供应链的关键节点上"
+      ],
+      "uses": [
+        "风险意识：供应商安全会传导到核心厂商",
+        "内容选题：AI 供应链的薄弱环节"
+      ],
+      "gap": "原文 403，以上据标题整理。",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 6
+    },
+    {
+      "key": "https://twitter.com/willdepue/status/2120992457630326841",
+      "url": "https://twitter.com/willdepue/status/2120992457630326841",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Forensic evidence Chinese AI labs built their newest models on Nvidia Blackwell",
+      "titleZh": "取证证据：中国 AI 实验室的新模型是在英伟达 Blackwell 上训的",
+      "author": "oger",
+      "publishedAt": "2026-11-13T07:36:28.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 2
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "芯片管制的执行效果，最终要看这类取证。",
+      "tags": [
+        "行业",
+        "芯片"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "帖子称有取证证据表明中国实验室的新模型基于英伟达 Blackwell 训练",
+        "涉及芯片管制的实际执行效果"
+      ],
+      "uses": [
+        "判断输入：管制是否真的挡得住",
+        "内容选题：算力取证怎么做"
+      ],
+      "gap": "原帖未抓取，以上据标题整理。",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 7
+    },
+    {
+      "key": "https://www.bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "OpenAI Joins Groundswell of Support for AI Chip Control Measures",
+      "titleZh": "OpenAI 加入支持 AI 芯片管制的一方",
+      "author": "pretext",
+      "publishedAt": "2026-11-13T07:31:03.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "管制立场变化会影响算力供给和模型价格。",
+      "tags": [
+        "行业",
+        "政策"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "OpenAI 表态支持 AI 芯片管制措施",
+        "立场与自身算力需求存在张力"
+      ],
+      "uses": [
+        "判断输入：政策风向对算力成本的影响",
+        "内容选题：AI 公司的监管站位"
+      ],
+      "gap": "彭博原文未抓取，以上据标题整理。",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 8
+    },
+    {
+      "key": "https://runitlocal.io/",
+      "url": "https://runitlocal.io/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Runitlocal.io – Run AI on your own hardware",
+      "titleZh": "runitlocal.io：在你自己的硬件上跑 AI",
+      "author": "rzk",
+      "publishedAt": "2026-11-13T07:24:51.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "浏览器读 GPU 信息、不上传，本地推理的入口在变简单。",
+      "tags": [
+        "工具",
+        "本地部署"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "浏览器读取本机 GPU 信息，不上传服务器",
+        "给出不同硬件的推理速度估算",
+        "主打「自己的硬件跑 AI」"
+      ],
+      "uses": [
+        "自用：评估本地能跑多大的模型",
+        "内容选题：本地推理的体验门槛"
+      ],
+      "gap": "",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 9
+    },
+    {
+      "key": "https://wonderchat.io/",
+      "url": "https://wonderchat.io/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Show HN: Wonderchat – A Zendesk alternative that doesn't charge per seat",
+      "titleZh": "Wonderchat：按坐席收费的客服工具替代品",
+      "author": "walkingsunrise",
+      "publishedAt": "2026-11-13T06:59:21.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 3
+      },
+      "excerpt": "Hi HN, I’m Vera, co-founder of Wonderchat. We started as an AI website agent that answers customer questions from a company’s website and docs. Over time, customers kept asking for the rest of the support stack around it, so we built a helpdesk: live chat, a unified inbox for email and SMS, and a…",
+      "excerptZh": "",
+      "reason": "AI 先解决 75% 重复工单，剩下的人工兜底——典型的分层自动化。",
+      "tags": [
+        "客服",
+        "AI应用"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "用 AI agent 自动解决约 75% 的重复客服工单",
+        "覆盖网页、邮件等渠道，剩余交人工",
+        "按坐席收费的替代方案，有免费额度"
+      ],
+      "uses": [
+        "选型：小团队客服自动化的参考",
+        "内容选题：AI 客服的真实解决率"
+      ],
+      "gap": "",
+      "batchId": 3,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 10
+    },
+    {
+      "key": "https://nachi065.github.io/AI-Security-Wiki/",
+      "url": "https://nachi065.github.io/AI-Security-Wiki/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "AI Security Wiki",
+      "titleZh": "AI 安全维基：治理、风险、控制项和 682 个测试用例",
+      "author": "totetsu",
+      "publishedAt": "2026-11-13T03:48:55.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 3
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "公开、厂商中立的参考架构，适合当合规清单用。",
+      "tags": [
+        "安全",
+        "合规"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "厂商中立的 AI 安全治理与参考架构维基",
+        "覆盖治理、风险、控制项、agentic AI 标准和区域合规",
+        "附带 682 个测试用例，可直接当清单"
+      ],
+      "uses": [
+        "合规：给 AI 项目做安全检查表",
+        "内容选题：AI 安全的落地清单长什么样"
+      ],
+      "gap": "",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 11
+    },
+    {
+      "key": "https://sspai.com/post/118512",
+      "url": "https://sspai.com/post/118512",
+      "lane": "zh",
+      "source": "少数派",
+      "title": "在快 AI 时代，我是怎么把 Mole 做成一款「慢产品」的？",
+      "titleZh": "在快 AI 时代，把 Mole 做成一款「慢产品」",
+      "author": "Tw93",
+      "publishedAt": "2026-11-13T03:35:48.000Z",
+      "popularity": null,
+      "excerpt": "距离写完上一篇在少数派发的《从开源清理工具到付费Mac应用，用户教会了我如何做产品》已经过去两个多月。这段时间里，Mole从1.13一路发到了1.19，加上了AI工具清理和系统数据清理，Windows ... 查看全文",
+      "excerptZh": "",
+      "reason": "作者用 agent + computer use 装了 500 多款软件来补卸载规则，是「AI 干脏活」的好例子。",
+      "tags": [
+        "产品",
+        "案例"
+      ],
+      "cover": "",
+      "lang": "zh",
+      "duration": null,
+      "keyPoints": [
+        "Mole 从 1.13 迭代到 1.19，GitHub Star 到 73.9K",
+        "作者让 agent 用 computer use 批量安装/卸载 500 多款软件，补齐清理规则",
+        "观点：代码越来越便宜，差距在只有亲手做过才知道的细节"
+      ],
+      "uses": [
+        "方法：用 agent 做大规模重复测试",
+        "内容选题：AI 时代「慢产品」怎么活"
+      ],
+      "gap": "",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 12
+    },
+    {
+      "key": "https://usediorama.com/rick-and-morty",
+      "url": "https://usediorama.com/rick-and-morty",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Show HN: I built a Rick and Morty explainer video generator",
+      "titleZh": "用 Rick and Morty 风格把网站解释成视频",
+      "author": "dixitbavu",
+      "publishedAt": "2026-11-13T03:47:15.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 11
+      },
+      "excerpt": "> paste any site or article or a script > we turn it into a Rick and Morty sketch with dialogues, scenes, action and Rick and Morty of course > click generate to turn the script into a storyboard you can review > click generate to get a final video (this part is paid as it uses AI video under the…",
+      "excerptZh": "",
+      "reason": "输入网址直接出讲解视频，是「内容再包装」的新形态。",
+      "tags": [
+        "AI应用",
+        "视频"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "输入网址即可生成 Rick and Morty 风格的讲解视频",
+        "提供三个完整示例",
+        "属于「把已有内容再包装」的工具"
+      ],
+      "uses": [
+        "内容选题：AI 视频的模板化生产",
+        "自用：把文章转成视频试试"
+      ],
+      "gap": "",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 13
+    },
+    {
+      "key": "https://github.com/sid732/loose-ends",
+      "url": "https://github.com/sid732/loose-ends",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Loose Ends: A check for unused code AI wrote or forgot to remove",
+      "titleZh": "Loose Ends：检查 AI 写了但没用的代码",
+      "author": "sid732",
+      "publishedAt": "2026-11-13T02:56:13.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "agent 写得快、留得多，这个工具在合并前查可达性。",
+      "tags": [
+        "工具",
+        "AI编程"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "检查 agent 改动后留下的死代码：没被调用的 helper、被替代的旧服务",
+        "从真实入口点做可达性分析，不靠 LLM 猜",
+        "合并前运行，给出证据"
+      ],
+      "uses": [
+        "自用：接入 CI 查 AI 留下的垃圾",
+        "内容选题：agent 写码的隐性成本"
+      ],
+      "gap": "",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 14
+    },
+    {
+      "key": "https://github.com/getzipzi/zipzi-2d",
+      "url": "https://github.com/getzipzi/zipzi-2d",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Show HN: Zipzi – Open-source Live2D Editor alternative with AI-assisted editing",
+      "titleZh": "Zipzi：开源的 Live2D 替代品，带 AI 协作编辑",
+      "author": "pakholeung37",
+      "publishedAt": "2026-11-13T02:54:37.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 1
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "人和 agent 共享同一个模型和撤销历史，协作方式有意思。",
+      "tags": [
+        "工具",
+        "开源"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "开源的 2D 建模与动画工具，对标 Live2D Cubism",
+        "人和 AI agent 共用同一个模型、撤销历史",
+        "Rust + GPUI，早期阶段，无稳定版"
+      ],
+      "uses": [
+        "关注：AI 协作式创作工具的形态",
+        "内容选题：人和 agent 共享编辑状态"
+      ],
+      "gap": "",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 15
+    },
+    {
+      "key": "https://news.ycombinator.com/item?id=50477517",
+      "url": "https://news.ycombinator.com/item?id=50477517",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Ask HN: Do you distrust OSS projects with Claude commits?",
+      "titleZh": "HN 讨论：你会不信任有 Claude 提交记录的开源项目吗",
+      "author": "rathboma",
+      "publishedAt": "2026-11-13T02:53:35.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 4
+      },
+      "excerpt": "Does any amount of AI contribution to a project turn you off? What's the limit?",
+      "excerptZh": "",
+      "reason": "「代码是谁写的」正在变成选型时的信任问题。",
+      "tags": [
+        "讨论",
+        "AI编程"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "讨论是否会因为项目里有 Claude 的提交记录而降低信任",
+        "反映「代码作者是谁」正在影响选型"
+      ],
+      "uses": [
+        "判断输入：开源项目信任的新维度",
+        "内容选题：AI 署名与信任"
+      ],
+      "gap": "讨论帖正文未抓到，以上据标题整理。",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 16
+    },
+    {
+      "key": "https://www.notion.com/en-gb/security/advisories/security-incident-involving-a-third-party-ai-vendor",
+      "url": "https://www.notion.com/en-gb/security/advisories/security-incident-involving-a-third-party-ai-vendor",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Notion AI chat transcripts exposed in Fireworks AI breach",
+      "titleZh": "Notion AI 聊天记录在 Fireworks AI 泄露事件中暴露",
+      "author": "fourfire",
+      "publishedAt": "2026-11-13T02:49:47.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 3
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "第三方 AI 供应商出事，用户数据跟着走——采购时要问的问题。",
+      "tags": [
+        "安全",
+        "AI应用"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "Fireworks AI 泄露事件波及不到 1% 的 Notion 工作区",
+        "暴露内容包括用户消息里的第三方 API key",
+        "Notion 已撤销相关 key 并通知供应商"
+      ],
+      "uses": [
+        "采购参考：第三方 AI 供应商要问的安全问题",
+        "内容选题：AI 中间商的数据风险"
+      ],
+      "gap": "",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 17
+    },
+    {
+      "key": "https://grow-bonsai.app/",
+      "url": "https://grow-bonsai.app/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Show HN: Grow any hobby (skills for humans not AI)",
+      "titleZh": "Grow any hobby：给人类练技能，不是给 AI 练",
+      "author": "ag_rin",
+      "publishedAt": "2026-11-13T02:40:39.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 3
+      },
+      "excerpt": "\"Skills for humans\" is what originally sparked me to create this app. Everyone was so focused on AI skills that it was kinda sad. I wanted to create an app focused on people and to help people grow. Let me know what you think! Developing this helped me stay sane.",
+      "excerptZh": "",
+      "reason": "把技能成长做成盆景，反效率叙事的产品化尝试。",
+      "tags": [
+        "产品",
+        "学习"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "把每项技能做成盆景，按练习时长生长",
+        "技能拆成小步骤，完成一步解锁下一步",
+        "明确面向「人类练技能」，不是给 AI 用"
+      ],
+      "uses": [
+        "产品参考：反效率叙事怎么落地",
+        "自用：试试它的技能拆解方式"
+      ],
+      "gap": "",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 18
+    },
+    {
+      "key": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+      "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "Nvidia employees petition to bring back Jensen Huang",
+      "titleZh": "英伟达员工请愿让黄仁勋回来",
+      "author": "lavendermon",
+      "publishedAt": "2026-11-13T02:16:24.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 516
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "内部情绪和董事会决策的拉扯，比公告更真实。",
+      "tags": [
+        "行业",
+        "公司"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "部分英伟达员工在内部请愿让黄仁勋回归",
+        "内部建议箱的帖子已积累 1600 多条评论",
+        "背景是其多起婚外情报道与突然辞职"
+      ],
+      "uses": [
+        "行业观察：创始人依赖症",
+        "内容选题：公司治理与个人崇拜"
+      ],
+      "gap": "",
+      "batchId": 2,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 19
+    },
+    {
+      "key": "https://latent.space/p/artcraft/",
+      "url": "https://latent.space/p/artcraft/",
+      "lane": "discussion",
+      "source": "Hacker News",
+      "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+      "titleZh": "ArtCraft 用 AI 重写了 Photoshop，现在想「重建一切」",
+      "author": "adunk",
+      "publishedAt": "2026-11-13T07:26:03.000Z",
+      "popularity": {
+        "label": "points",
+        "value": 3
+      },
+      "excerpt": "",
+      "excerptZh": "",
+      "reason": "一个极端的 AI 原生案例：不是加个 AI 功能，而是用 AI 把整个软件重写一遍。",
+      "tags": [
+        "AI应用",
+        "开源"
+      ],
+      "cover": "",
+      "lang": "en",
+      "duration": null,
+      "keyPoints": [
+        "ArtCraft 用 AI 把 Photoshop 重写为开源软件",
+        "CEO Brandon Thomas 的目标更大：把互联网「拿回来」",
+        "目前已发布 17 个开源项目（原文节选）"
+      ],
+      "uses": [
+        "案例参考：AI 原生重写成熟软件的可行性",
+        "内容选题：AI 让「重写一遍」重新变得划算",
+        "判断输入：开源替代商业软件的新一轮机会"
+      ],
+      "gap": "",
+      "batchId": 1,
+      "state": {
+        "saved": false,
+        "read": false,
+        "hidden": false
+      },
+      "id": 20
+    },
     {
       "key": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare",
       "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare",
@@ -21,7 +884,7 @@
       "publishedAt": "2026-11-13T05:37:54.000Z",
       "popularity": {
         "label": "points",
-        "value": 1
+        "value": 2
       },
       "excerpt": "",
       "excerptZh": "",
@@ -50,46 +913,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 0
-    },
-    {
-      "key": "https://latent.space/p/artcraft/",
-      "url": "https://latent.space/p/artcraft/",
-      "lane": "blog",
-      "source": "Latent Space",
-      "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
-      "titleZh": "ArtCraft 用 AI 重写了 Photoshop，现在想「重建一切」",
-      "author": "Richard MacManus",
-      "publishedAt": "2026-11-13T04:17:25.000Z",
-      "popularity": null,
-      "excerpt": "ArtCraft used AI to rewrite Photoshop as open source software. For CEO Brandon Thomas, the vision is even bigger: to take back the internet!",
-      "excerptZh": "",
-      "reason": "一个极端的 AI 原生案例：不是加个 AI 功能，而是用 AI 把整个软件重写一遍。",
-      "tags": [
-        "AI应用",
-        "开源"
-      ],
-      "cover": "",
-      "lang": "en",
-      "duration": null,
-      "keyPoints": [
-        "ArtCraft 用 AI 把 Photoshop 重写为开源软件",
-        "CEO Brandon Thomas 的目标更大：把互联网「拿回来」",
-        "目前已发布 17 个开源项目（原文节选）"
-      ],
-      "uses": [
-        "案例参考：AI 原生重写成熟软件的可行性",
-        "内容选题：AI 让「重写一遍」重新变得划算",
-        "判断输入：开源替代商业软件的新一轮机会"
-      ],
-      "gap": "",
-      "batchId": 1,
-      "state": {
-        "saved": false,
-        "read": false,
-        "hidden": false
-      },
-      "id": 1
+      "id": 21
     },
     {
       "key": "https://aircraftdefects.com/",
@@ -131,7 +955,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 2
+      "id": 22
     },
     {
       "key": "https://thingspool.net/shards-of-sanity/page-5.html",
@@ -172,7 +996,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 3
+      "id": 23
     },
     {
       "key": "https://floxolab.com/ai-crawler-checker",
@@ -214,7 +1038,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 4
+      "id": 24
     },
     {
       "key": "https://www.theatlantic.com/international/2026/11/nvidia-china-ai-regulation/689387/",
@@ -227,7 +1051,7 @@
       "publishedAt": "2026-11-13T04:37:55.000Z",
       "popularity": {
         "label": "points",
-        "value": 4
+        "value": 5
       },
       "excerpt": "",
       "excerptZh": "",
@@ -255,7 +1079,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 5
+      "id": 25
     },
     {
       "key": "https://www.seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/",
@@ -297,7 +1121,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 6
+      "id": 26
     },
     {
       "key": "https://www.theregister.com/ai-and-ml/2026/11/13/alibabas-qwen38-re-educated-with-a-more-western-worldview/5309555",
@@ -338,7 +1162,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 7
+      "id": 27
     },
     {
       "key": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
@@ -380,7 +1204,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 8
+      "id": 28
     },
     {
       "key": "https://latent.space/p/jev-revolution/",
@@ -419,7 +1243,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 9
+      "id": 29
     },
     {
       "key": "https://arxiv.org/abs/2611.15023v1",
@@ -458,7 +1282,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 10
+      "id": 30
     },
     {
       "key": "https://github.com/janestreet/agent_skills",
@@ -471,7 +1295,7 @@
       "publishedAt": "2026-11-03T16:50:21.000Z",
       "popularity": {
         "label": "stars",
-        "value": 7895
+        "value": 7956
       },
       "excerpt": "Agent skills",
       "excerptZh": "智能体技能。",
@@ -500,7 +1324,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 11
+      "id": 31
     },
     {
       "key": "https://www.bilibili.com/video/BV19JfKY8Eev",
@@ -539,7 +1363,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 12
+      "id": 32
     },
     {
       "key": "https://sspai.com/post/118966",
@@ -578,7 +1402,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 13
+      "id": 33
     },
     {
       "key": "https://schelling-atlas.com/",
@@ -620,7 +1444,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 14
+      "id": 34
     },
     {
       "key": "https://latent.space/p/codex-work/",
@@ -659,7 +1483,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 15
+      "id": 35
     },
     {
       "key": "https://arxiv.org/abs/2611.15006v1",
@@ -698,7 +1522,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 16
+      "id": 36
     },
     {
       "key": "https://github.com/deepseek-ai/dsh-superagent-prototype",
@@ -711,7 +1535,7 @@
       "publishedAt": "2026-10-31T09:32:46.000Z",
       "popularity": {
         "label": "stars",
-        "value": 22816
+        "value": 22884
       },
       "excerpt": "Towards a More Autonomous Agent System",
       "excerptZh": "走向更自主的智能体系统。",
@@ -740,7 +1564,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 17
+      "id": 37
     },
     {
       "key": "https://www.bilibili.com/video/BV1W5fAYTEMk",
@@ -779,7 +1603,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 18
+      "id": 38
     },
     {
       "key": "https://sspai.com/post/85735",
@@ -819,7 +1643,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 19
+      "id": 39
     },
     {
       "key": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
@@ -860,7 +1684,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 20
+      "id": 40
     },
     {
       "key": "https://latent.space/p/resend/",
@@ -899,7 +1723,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 21
+      "id": 41
     },
     {
       "key": "https://arxiv.org/abs/2611.14997v1",
@@ -938,7 +1762,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 22
+      "id": 42
     },
     {
       "key": "https://github.com/heydamir/unslop",
@@ -951,7 +1775,7 @@
       "publishedAt": "2026-10-29T15:41:21.000Z",
       "popularity": {
         "label": "stars",
-        "value": 15247
+        "value": 15324
       },
       "excerpt": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
       "excerptZh": "一个 Claude 技能，把 vibe coding 出来的、一眼 AI 的界面，变成有设计感的界面。",
@@ -980,7 +1804,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 23
+      "id": 43
     },
     {
       "key": "https://www.bilibili.com/video/BV1AXZ4YvEXY",
@@ -1018,7 +1842,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 24
+      "id": 44
     },
     {
       "key": "https://sspai.com/post/118935",
@@ -1057,7 +1881,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 25
+      "id": 45
     },
     {
       "key": "https://lars.yencken.org/have-ai-timelines-moved/",
@@ -1098,7 +1922,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 26
+      "id": 46
     },
     {
       "key": "https://latent.space/p/naiveai/",
@@ -1137,7 +1961,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 27
+      "id": 47
     },
     {
       "key": "https://arxiv.org/abs/2611.14980v1",
@@ -1176,7 +2000,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 28
+      "id": 48
     },
     {
       "key": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
@@ -1189,7 +2013,7 @@
       "publishedAt": "2026-09-24T16:17:19.000Z",
       "popularity": {
         "label": "stars",
-        "value": 71666
+        "value": 71901
       },
       "excerpt": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
       "excerptZh": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。",
@@ -1218,7 +2042,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 29
+      "id": 49
     },
     {
       "key": "https://www.bilibili.com/video/BV1cUoDYaEdb",
@@ -1257,7 +2081,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 30
+      "id": 50
     },
     {
       "key": "https://medium.com/young-coder/7-habits-of-highly-ineffective-ai-programmers-f40febb3b6e7",
@@ -1298,7 +2122,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 31
+      "id": 51
     },
     {
       "key": "https://simonwillison.net/2026/Nov/10/muse-ember/",
@@ -1337,7 +2161,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 32
+      "id": 52
     },
     {
       "key": "https://arxiv.org/abs/2611.14975v1",
@@ -1376,7 +2200,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 33
+      "id": 53
     },
     {
       "key": "https://github.com/yetone/magpie",
@@ -1389,7 +2213,7 @@
       "publishedAt": "2026-09-23T16:22:35.000Z",
       "popularity": {
         "label": "stars",
-        "value": 35616
+        "value": 35768
       },
       "excerpt": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
       "excerptZh": "每个 agent 的模型，都在一个地方。在菜单栏里让 Codex 跑 DeepSeek、让 Claude Code 跑 Kimi。",
@@ -1418,7 +2242,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 34
+      "id": 54
     },
     {
       "key": "https://www.bilibili.com/video/BV1hsZCYZEMh",
@@ -1457,7 +2281,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 35
+      "id": 55
     },
     {
       "key": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
@@ -1498,7 +2322,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 36
+      "id": 56
     },
     {
       "key": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
@@ -1537,7 +2361,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 37
+      "id": 57
     },
     {
       "key": "https://arxiv.org/abs/2611.14960v1",
@@ -1576,7 +2400,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 38
+      "id": 58
     },
     {
       "key": "https://github.com/browser-use/jev-ultrafast",
@@ -1589,7 +2413,7 @@
       "publishedAt": "2026-09-16T21:30:12.000Z",
       "popularity": {
         "label": "stars",
-        "value": 24470
+        "value": 24472
       },
       "excerpt": "Fastest and cheapest web agent",
       "excerptZh": "最快、最便宜的网页 agent。",
@@ -1618,7 +2442,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 39
+      "id": 59
     },
     {
       "key": "https://www.bilibili.com/video/BV1igSdY7EFE",
@@ -1657,7 +2481,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 40
+      "id": 60
     },
     {
       "key": "https://birdyfoot.com/research/ai-tool-vulnerabilities",
@@ -1699,7 +2523,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 41
+      "id": 61
     },
     {
       "key": "https://simonwillison.net/2026/Nov/9/details-summary/",
@@ -1738,7 +2562,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 42
+      "id": 62
     },
     {
       "key": "https://arxiv.org/abs/2611.14935v1",
@@ -1777,7 +2601,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 43
+      "id": 63
     },
     {
       "key": "https://www.psypost.org/ai-written-peer-reviews-outscored-top-human-experts-in-blind-comparisons-harvard-working-paper-finds/",
@@ -1818,7 +2642,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 44
+      "id": 64
     },
     {
       "key": "https://latent.space/p/cs146s/",
@@ -1857,7 +2681,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 45
+      "id": 65
     },
     {
       "key": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
@@ -1898,7 +2722,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 46
+      "id": 66
     },
     {
       "key": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
@@ -1937,7 +2761,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 47
+      "id": 67
     },
     {
       "key": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
@@ -1950,7 +2774,7 @@
       "publishedAt": "2026-11-12T23:06:17.000Z",
       "popularity": {
         "label": "points",
-        "value": 162
+        "value": 220
       },
       "excerpt": "",
       "excerptZh": "",
@@ -1979,7 +2803,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 48
+      "id": 68
     },
     {
       "key": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
@@ -1992,7 +2816,7 @@
       "publishedAt": "2026-11-12T18:15:48.000Z",
       "popularity": {
         "label": "points",
-        "value": 90
+        "value": 97
       },
       "excerpt": "We (GREP.AI, YC F26) are open-sourcing AgentRun and turning it into a full managed agents platform. Read more about it in this post: https://agentrun.ai/blog/introducing-agentrun-run-smarter-ag... . It includes what we originally built for our own agent harness: - Self-improving…",
       "excerptZh": "我们（GREP.AI，YC F26）把 AgentRun 开源，并把它做成一个完整的托管智能体平台。它包含我们为自己的 agent harness 构建的那套东西：自我改进……",
@@ -2021,7 +2845,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 49
+      "id": 69
     },
     {
       "key": "https://github.com/hyperionaidev/smolmaxxing/",
@@ -2034,7 +2858,7 @@
       "publishedAt": "2026-11-12T15:23:10.000Z",
       "popularity": {
         "label": "points",
-        "value": 316
+        "value": 347
       },
       "excerpt": "",
       "excerptZh": "",
@@ -2062,7 +2886,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 50
+      "id": 70
     },
     {
       "key": "https://ipo.anthropic.com/us/",
@@ -2075,7 +2899,7 @@
       "publishedAt": "2026-11-12T11:46:41.000Z",
       "popularity": {
         "label": "points",
-        "value": 875
+        "value": 910
       },
       "excerpt": "",
       "excerptZh": "",
@@ -2104,7 +2928,7 @@
         "read": false,
         "hidden": false
       },
-      "id": 51
+      "id": 71
     }
   ]
 }
